@@ -1,0 +1,1076 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Uzair Farooq Naikoo — AI, Robotics & Embedded Hardware</title>
+  <meta name="description" content="Portfolio of Uzair Farooq Naikoo. Creator of O.M.N.I 1.0, Embedded IoT Engineer, and Multimodal AI Architect." />
+  
+  <!-- Modern Sleek Google Fonts (Outfit, Rajdhani, JetBrains Mono, Plus Jakarta Sans, Syne) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Rajdhani:wght@500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <!-- Preloader Screen -->
+  <div id="preloader" class="preloader" aria-live="polite">
+    <div class="loader-content">
+      <div class="loader-title">UZAIR FAROOQ NAIKOO</div>
+      <div class="loader-subtitle">INITIALIZING O.M.N.I CORE & HARDWARE TELEMETRY</div>
+      <div class="loader-bar-wrap">
+        <div id="loader-bar" class="loader-bar"></div>
+      </div>
+      <div id="loader-percent" class="loader-percent">0%</div>
+    </div>
+  </div>
+
+  <!-- Fixed 4K Video Sequence Canvas (Scrubs continuously over entire website) -->
+  <div class="fixed-video-viewport" id="canvas-viewport" aria-hidden="true">
+    <canvas id="sequence-canvas"></canvas>
+    <div class="ambient-glow glow-cyan"></div>
+    <div class="ambient-glow glow-red"></div>
+    <div class="cinematic-overlay"></div>
+  </div>
+
+  <!-- Pinned Top Navigation Bar with Authentic Signature Logo -->
+  <header class="hud-top-bar">
+    <a href="#" class="hud-brand" id="brand-trigger" title="Uzair Farooq Naikoo — Home">
+      <img src="/signature-cyan.png" alt="Uzair Official Signature Seal" class="nav-sig-icon" />
+      <div class="brand-text-group">
+        <span class="brand-name">UZAIR</span>
+        <span class="brand-sub">FAROOQ NAIKOO</span>
+        <span class="brand-badge">®</span>
+      </div>
+      <span class="brand-tagline">// AI & EMBEDDED SYSTEMS</span>
+    </a>
+
+    <div class="top-nav-divider" aria-hidden="true">+</div>
+
+    <nav class="hud-nav glass-cut-nav" aria-label="Main Navigation">
+      <a href="#flagship-projects" class="nav-btn" id="nav-btn-projects">⚡ PROJECTS</a>
+      <span class="nav-dot">·</span>
+      <a href="#omni-showcase" class="nav-btn" id="nav-btn-omni" title="O.M.N.I 1.0 Autonomous Robot">
+        <span>🤖 O.M.N.I ROBOT</span>
+      </a>
+      <span class="nav-dot">·</span>
+      <a href="#iot-automation" class="nav-btn" id="nav-btn-iot" title="Home Automated IoT System">
+        <span>🏠 IOT SYSTEM</span>
+      </a>
+      <span class="nav-dot">·</span>
+      <button type="button" class="nav-btn" data-modal="hardware">🔧 HARDWARE LAB</button>
+      <span class="nav-dot">·</span>
+      <a href="https://github.com/uzairnaikoo" target="_blank" rel="noopener noreferrer" class="nav-btn nav-btn-github" title="Uzair Farooq Naikoo on GitHub (@uzairnaikoo)">
+        <span>🐙 GITHUB</span>
+      </a>
+      <span class="nav-dot">·</span>
+      <button type="button" class="nav-btn" data-modal="contact">✉ CONTACT</button>
+    </nav>
+
+    <div class="top-nav-divider" aria-hidden="true">+</div>
+
+    <div class="hud-top-action">
+      <button type="button" class="btn-work" id="btn-contact-trigger">
+        <span>LET'S BUILD</span>
+        <span class="pulse-indicator"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Scroll Container -->
+  <main id="app-container" class="app-container">
+    
+    <!-- =================================================================
+         1. HERO SECTION: 4K VIDEO SCRUB SEQUENCE & CYBER HUD
+         ================================================================= -->
+    <section class="hero-section" id="hero-sequence-container">
+      <!-- Cyber HUD Interface Frame -->
+      <div class="hud-outer-frame" id="hud-frame">
+        <!-- Corner Crosshairs -->
+        <div class="hud-corner corner-tl" aria-hidden="true">+</div>
+        <div class="hud-corner corner-tr" aria-hidden="true">+</div>
+        <div class="hud-corner corner-bl" aria-hidden="true">+</div>
+        <div class="hud-corner corner-br" aria-hidden="true">+</div>
+
+          <!-- Main Hero Body -->
+          <section class="hud-hero-content">
+            <div class="hero-left-column">
+              <!-- Role Pill Badge -->
+              <div class="hero-badge">
+                <span class="badge-icon">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="4" y="4" width="16" height="16" rx="2"></rect>
+                    <rect x="9" y="9" width="6" height="6"></rect>
+                    <line x1="9" y1="1" x2="9" y2="4"></line>
+                    <line x1="15" y1="1" x2="15" y2="4"></line>
+                    <line x1="9" y1="20" x2="9" y2="23"></line>
+                    <line x1="15" y1="20" x2="15" y2="23"></line>
+                    <line x1="20" y1="9" x2="23" y2="9"></line>
+                    <line x1="20" y1="14" x2="23" y2="14"></line>
+                    <line x1="1" y1="9" x2="4" y2="9"></line>
+                    <line x1="1" y1="14" x2="4" y2="14"></line>
+                  </svg>
+                </span>
+                <span class="badge-dot"></span>
+                <span class="badge-text" id="cycling-role">AI ARCHITECT & EMBEDDED SYSTEMS ENGINEER</span>
+              </div>
+
+              <!-- Giant Futuristic Chrome Display Title with smooth 2-block transition -->
+              <h1 class="hero-display-title" id="hero-display-title" aria-label="Uzair Farooq Naikoo Portfolio Headlines">
+                <div class="headline-block headline-block-1 active" id="headline-block-1">
+                  <div class="title-line title-line-1">
+                    <span class="chrome-text">INTELLIGENCE</span>
+                  </div>
+                  <div class="title-line title-line-2">
+                    <span class="crimson-text">THAT MOVES.</span>
+                  </div>
+                </div>
+                <div class="headline-block headline-block-2" id="headline-block-2">
+                  <div class="title-line title-line-1">
+                    <span class="chrome-text">CIRCUITS</span>
+                  </div>
+                  <div class="title-line title-line-2">
+                    <span class="crimson-text">THAT THINK.</span>
+                  </div>
+                </div>
+              </h1>
+
+              <!-- Description Recalling Uzair's Projects -->
+              <p class="hero-description">
+                Engineering autonomous companion robotics, high-speed edge microcontroller firmware, and real-time multimodal AI systems to breathe physical life into silicon.
+              </p>
+
+              <!-- Primary Action Buttons (Real Glass-Cut UI Options) -->
+              <div class="hero-cta-wrap">
+                <a href="#omni-showcase" class="btn-portfolio glass-cut" title="Explore O.M.N.I 1.0 Autonomous Robot Showcase">
+                  <span>🤖 EXPLORE O.M.N.I ROBOT</span>
+                  <span class="btn-arrow" aria-hidden="true">↓</span>
+                </a>
+                
+                <a href="#flagship-projects" class="btn-secondary-hud glass-cut">
+                  <span class="btn-chip-icon">⚡</span>
+                  <span>FLAGSHIP CREATIONS</span>
+                </a>
+
+                <a href="https://github.com/uzairnaikoo" target="_blank" rel="noopener noreferrer" class="btn-secondary-hud glass-cut" title="Uzair Farooq Naikoo on GitHub">
+                  <span class="btn-chip-icon">🐙</span>
+                  <span>GITHUB @uzairnaikoo</span>
+                  <span class="btn-arrow" aria-hidden="true">↗</span>
+                </a>
+              </div>
+
+              <!-- Lower Metadata Cluster -->
+              <div class="hero-lower-meta">
+                <!-- Availability Status -->
+                <div class="meta-availability">
+                  <span class="meta-corner-bracket" aria-hidden="true">⌜</span>
+                  <div class="avail-content">
+                    <span class="pulse-dot-red"></span>
+                    <div class="avail-labels">
+                      <span class="avail-top">SYSTEM STATUS</span>
+                      <span class="avail-bot">AVAILABLE FOR AI / HARDWARE</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- 3D Wireframe Celestial Sphere -->
+                <div class="celestial-sphere-wrap" aria-hidden="true" title="Earth Coordinate Matrix">
+                  <div class="sphere-orbit-ring">
+                    <span class="orbit-satellite"></span>
+                  </div>
+                  <div class="sphere-grid">
+                    <div class="lat-ring lat-1"></div>
+                    <div class="lat-ring lat-2"></div>
+                    <div class="lon-ring lon-1"></div>
+                    <div class="lon-ring lon-2"></div>
+                  </div>
+                  <div class="sphere-center-star">✦</div>
+                </div>
+
+                <!-- Coordinates & Location -->
+                <div class="meta-location">
+                  <div class="loc-country">Based in <span class="country-name">EARTH</span></div>
+                  <div class="loc-coords">
+                    <span>36.8508° N</span>
+                    <span>75.9775° W</span>
+                  </div>
+                  <div class="loc-crosshair">+</div>
+                </div>
+              </div>
+
+              <!-- =========================================================
+                   UZAIR'S AUTHENTICATED ARCHITECT SIGNATURE CARD
+                   ========================================================= -->
+              <div class="hero-signature-card" id="hero-signature-card" title="Verified Signature of Uzair Farooq Naikoo">
+                <div class="sig-header">
+                  <span class="sig-badge">✦ VERIFIED ARCHITECT & EMBEDDED ENGINEER</span>
+                  <span class="sig-code">AUTH-KEY // UFN-2026-OMNI</span>
+                </div>
+                <div class="sig-image-wrap">
+                  <img src="/signature.png" alt="Uzair Farooq Naikoo Official Signature" class="sig-img" />
+                  <div class="sig-scan-sheen" aria-hidden="true"></div>
+                </div>
+                <div class="sig-footer">
+                  <span class="sig-name">Uzair Farooq Naikoo</span>
+                  <span class="sig-title">Creator of O.M.N.I 1.0 Robot · Embedded Systems & Multimodal AI</span>
+                </div>
+              </div>
+
+            </div>
+          </section>
+
+          <!-- Right Edge Vertical Watermark -->
+          <div class="hud-right-edge-tag" aria-hidden="true">
+            <span>© 2026 UZAIR FAROOQ NAIKOO · AI & EMBEDDED SYSTEMS</span>
+          </div>
+
+          <!-- Bottom HUD Bar -->
+          <footer class="hud-bottom-bar">
+            <div class="hud-bottom-left">
+              <span class="bottom-icon">📡</span>
+              <span class="bottom-code">SYS_ONLINE // ESP8266_NODE_01 // 36.8508°N</span>
+            </div>
+
+            <div class="hud-bottom-center">
+              <div class="frame-counter-pill">
+                <span class="pulse-dot-green"></span>
+                <span>PHYSICAL HARDWARE TELEMETRY // 60 FPS ACTIVE</span>
+              </div>
+            </div>
+
+            <div class="hud-bottom-right">
+              <span class="tag-y2k">HARDWARE × AI</span>
+              <span class="tag-alert" aria-hidden="true">▲</span>
+              <div class="frame-counter-pill" id="frame-counter">001 / 198</div>
+            </div>
+          </footer>
+        </div>
+    </section>
+
+    <!-- =================================================================
+         2. FLAGSHIP ENGINEERING PROJECTS SHOWCASE SECTION
+         Clean, high-density showcase of real hardware & AI projects
+         ================================================================= -->
+    <section class="flagship-projects-section" id="flagship-projects" aria-label="Flagship Engineering Projects">
+      <div class="section-container">
+        <div class="section-header">
+          <div class="section-badge">
+            <span class="badge-dot-cyan"></span>
+            <span>FLAGSHIP CREATIONS // ROBOTICS, WEB APPS & AI</span>
+          </div>
+          <h2 class="section-title">AUTONOMOUS ROBOTICS, WEB APPS & EMBEDDED SYSTEMS</h2>
+          <p class="section-subtitle">
+            Directly engineered by Uzair Farooq Naikoo. Built from bare copper, custom firmware, on-device machine learning, and high-speed cloud networks.
+          </p>
+          <!-- Real Glass Cut UI Quick-Jump Options Dock -->
+          <div class="glass-cut-filter-dock" id="projects-filter-dock" aria-label="Project Filter Options">
+            <button type="button" class="dock-btn glass-cut active" data-filter="all">⚡ ALL PLATFORMS</button>
+            <button type="button" class="dock-btn glass-cut" data-filter="robotics">🤖 O.M.N.I ROBOTICS</button>
+            <button type="button" class="dock-btn glass-cut" data-filter="ai-web">🌐 WEB APPS &amp; AI</button>
+            <button type="button" class="dock-btn glass-cut" data-filter="iot-hardware">🏠 EMBEDDED IOT</button>
+            <a href="https://github.com/uzairnaikoo" target="_blank" rel="noopener noreferrer" class="dock-btn glass-cut dock-btn-gh" title="Uzair Farooq Naikoo on GitHub">
+              <span>🐙 GITHUB @uzairnaikoo</span>
+              <span class="dock-arrow">↗</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="flagship-grid">
+          <!-- Card 1: O.M.N.I 1.0 Companion Robot (Featured Large Card) -->
+          <article class="flagship-card card-featured glass-cut" data-category="robotics">
+            <div class="fcard-badge">FLAGSHIP COMPANION ROBOT</div>
+            <div class="fcard-media">
+              <img src="/omni/omni_front_display.jpg" alt="O.M.N.I 1.0 Robotic Companion with Cyber Eyes" />
+              <div class="fcard-scanline"></div>
+              <div class="fcard-status-pill"><span class="pulse-dot-green"></span> 60FPS VISOR ACTIVE</div>
+            </div>
+            <div class="fcard-content">
+              <div class="fcard-tag-row">
+                <span class="fcard-tag">ROBOTICS // 4WD</span>
+                <span class="fcard-chip">RASPBERRY PI 4 + L298N</span>
+              </div>
+              <h3 class="fcard-title">O.M.N.I 1.0 — Autonomous Robotic Companion</h3>
+              <p class="fcard-desc">
+                An intelligent companion robot combining real-time bidirectional voice streaming with sub-second 0.69s latency, custom cybernetic eye visor kinematics on a 3.5" TFT SPI display, and full 4WD autonomous navigation with ultrasonic obstacle avoidance.
+              </p>
+              <div class="fcard-tech-pills">
+                <span>Gemini Live WebSocket</span>
+                <span>24kHz PCM Audio</span>
+                <span>L298N Dual H-Bridge</span>
+                <span>4WD TT DC Motors</span>
+                <span>HC-SR04 Radar</span>
+                <span>OV5647 CSI Vision</span>
+                <span>3.5" SPI TFT</span>
+              </div>
+              <div class="fcard-metrics-grid">
+                <div class="fmetric"><span class="mval">0.69s</span><span class="mlbl">Voice Latency</span></div>
+                <div class="fmetric"><span class="mval">60 FPS</span><span class="mlbl">Visor Kinematics</span></div>
+                <div class="fmetric"><span class="mval">4-Wheel</span><span class="mlbl">PWM Drive</span></div>
+              </div>
+              <div class="fcard-actions">
+                <a href="#omni-showcase" class="btn-launch-live-fcard">
+                  <span>🤖 EXPLORE SHOWCASE &amp; VIDEO</span>
+                  <span class="btn-arrow">↓</span>
+                </a>
+                <button type="button" class="btn-inspect-trigger" data-project-id="omni-chassis-4wd">
+                  <span>INSPECT PINOUTS &amp; TELEMETRY</span>
+                  <span class="btn-arrow">↗</span>
+                </button>
+                <a href="https://github.com/uzairnaikoo" target="_blank" rel="noopener noreferrer" class="btn-inspect-trigger">
+                  <span>🐙 GITHUB REPO</span>
+                  <span class="btn-arrow">↗</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2: OcuSafe — Smart Eye & App Protection Guardian (Live Web App) -->
+          <article class="flagship-card glass-cut" data-category="ai-web">
+            <div class="fcard-badge">LIVE PRODUCTION APP</div>
+            <div class="fcard-media">
+              <img src="/gallery/ocusafe-preview.png" alt="OcuSafe Smart Eye and App Protection Guardian" />
+              <div class="fcard-scanline"></div>
+              <div class="fcard-status-pill"><span class="pulse-dot-green"></span> LIVE ON NETLIFY</div>
+            </div>
+            <div class="fcard-content">
+              <div class="fcard-tag-row">
+                <span class="fcard-tag">APP // ANDROID &amp; WINDOWS</span>
+                <span class="fcard-chip">ON-DEVICE ML + SYSTEM TRAY</span>
+              </div>
+              <h3 class="fcard-title">OcuSafe — Smart Eye &amp; App Guardian</h3>
+              <p class="fcard-desc">
+                Cross-platform digital wellness and eye health application featuring on-device computer vision proximity detection alerting when screen distance is under 30cm, 20-20-20 rest breaks, daily app usage limit controls, and Device Administrator uninstall protection.
+              </p>
+              <div class="fcard-tech-pills">
+                <span>On-Device Camera ML</span>
+                <span>Screen Distance &lt;30cm</span>
+                <span>20-20-20 Rule</span>
+                <span>Device Admin Lock</span>
+                <span>Android APK</span>
+                <span>Windows Tray EXE</span>
+              </div>
+              <div class="fcard-actions">
+                <a href="https://ocusafeapp.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn-launch-live-fcard">
+                  <span>🚀 LAUNCH LIVE APP</span>
+                  <span class="btn-arrow">↗</span>
+                </a>
+                <button type="button" class="btn-inspect-trigger" data-project-id="ocusafe-app">
+                  <span>INSPECT TELEMETRY</span>
+                  <span class="btn-arrow">↗</span>
+                </button>
+                <a href="https://github.com/uzairnaikoo" target="_blank" rel="noopener noreferrer" class="btn-inspect-trigger">
+                  <span>🐙 SOURCE CODE</span>
+                  <span class="btn-arrow">↗</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3: Nova Chat — Real-Time WebSocket Cyber Messenger (Live Web App) -->
+          <article class="flagship-card glass-cut" data-category="ai-web">
+            <div class="fcard-badge">LIVE PRODUCTION APP</div>
+            <div class="fcard-media">
+              <img src="/gallery/novachat-mockup.png" alt="Nova Chat Real-Time Cyber Messenger" />
+              <div class="fcard-scanline"></div>
+              <div class="fcard-status-pill"><span class="pulse-dot-green"></span> LIVE ON NETLIFY</div>
+            </div>
+            <div class="fcard-content">
+              <div class="fcard-tag-row">
+                <span class="fcard-tag">APP // REAL-TIME MESSAGING</span>
+                <span class="fcard-chip">REACT SPA + WEBSOCKET</span>
+              </div>
+              <h3 class="fcard-title">Nova Chat — High-Speed Cyber Messenger</h3>
+              <p class="fcard-desc">
+                Next-generation lightning-fast messaging platform built with a high-performance cyber-glassmorphism interface. Delivers real-time bidirectional WebSocket message routing, low-latency in-browser voice note audio streaming, media attachments, and instant client synchronization.
+              </p>
+              <div class="fcard-tech-pills">
+                <span>React SPA</span>
+                <span>Full-Duplex WebSockets</span>
+                <span>Voice Notes Opus</span>
+                <span>Sub-50ms Sync</span>
+                <span>Cyber Glassmorphism</span>
+                <span>Netlify Edge CDN</span>
+              </div>
+              <div class="fcard-actions">
+                <a href="https://novachatapp.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn-launch-live-fcard">
+                  <span>🚀 LAUNCH LIVE APP</span>
+                  <span class="btn-arrow">↗</span>
+                </a>
+                <button type="button" class="btn-inspect-trigger" data-project-id="novachat-app">
+                  <span>INSPECT TELEMETRY</span>
+                  <span class="btn-arrow">↗</span>
+                </button>
+                <a href="https://github.com/uzairnaikoo" target="_blank" rel="noopener noreferrer" class="btn-inspect-trigger">
+                  <span>🐙 SOURCE CODE</span>
+                  <span class="btn-arrow">↗</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 4: Distributed ESP32/ESP8266 Sensor Mesh Grid -->
+          <article class="flagship-card glass-cut" data-category="iot-hardware">
+            <div class="fcard-badge">EMBEDDED IOT MESH</div>
+            <div class="fcard-media">
+              <img src="/frames/ezgif-frame-095.jpg" alt="Distributed IoT Sensor Mesh Grid" />
+              <div class="fcard-scanline"></div>
+              <div class="fcard-status-pill"><span class="pulse-dot-cyan"></span> ESP-NOW MESH ACTIVE</div>
+            </div>
+            <div class="fcard-content">
+              <div class="fcard-tag-row">
+                <span class="fcard-tag">IOT &amp; TELEMETRY</span>
+                <span class="fcard-chip">ESP32 + ESP8266</span>
+              </div>
+              <h3 class="fcard-title">Distributed IoT Sensor Mesh Grid</h3>
+              <p class="fcard-desc">
+                Low-power wireless telemetry network routing environmental diagnostics, distance radar, and hardware health over high-speed ESP-NOW peer-to-peer channels directly to the central robot brain.
+              </p>
+              <div class="fcard-tech-pills">
+                <span>ESP8266 NodeMCU</span>
+                <span>ESP32 Dual-Core</span>
+                <span>ESP-NOW Protocol</span>
+                <span>I2C / SPI Bus</span>
+                <span>&lt; 5ms Latency</span>
+              </div>
+              <div class="fcard-actions">
+                <button type="button" class="btn-inspect-trigger" data-project-id="esp-sensor-grid">
+                  <span>INSPECT SCHEMATICS</span>
+                  <span class="btn-arrow">↗</span>
+                </button>
+                <a href="#iot-automation" class="btn-launch-live-fcard">
+                  <span>🏠 VIEW IOT SHOWCASE</span>
+                  <span class="btn-arrow">↓</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 5: Multimodal Voice & Neural Tool Calling Engine -->
+          <article class="flagship-card glass-cut" data-category="ai-web robotics">
+            <div class="fcard-badge">MULTIMODAL AI CORE</div>
+            <div class="fcard-media">
+              <img src="/gallery/omni-pi-voice.png" alt="Multimodal Voice & Neural Tool Engine" />
+              <div class="fcard-scanline"></div>
+              <div class="fcard-status-pill"><span class="pulse-dot-red"></span> LIVE STREAMING DUPLEX</div>
+            </div>
+            <div class="fcard-content">
+              <div class="fcard-tag-row">
+                <span class="fcard-tag">AI SYSTEMS</span>
+                <span class="fcard-chip">GEMINI 2.0 + PIPEWIRE</span>
+              </div>
+              <h3 class="fcard-title">Multimodal Neural Tool Orchestrator</h3>
+              <p class="fcard-desc">
+                Autonomous function-calling orchestrator translating live spoken natural language into immediate robotic motor actuation, camera frame captures, and emotional visor state changes.
+              </p>
+              <div class="fcard-tech-pills">
+                <span>Declarative Function RPC</span>
+                <span>PipeWire Audio</span>
+                <span>Hardware Echo Cancellation</span>
+                <span>Server VAD Interruption</span>
+              </div>
+              <div class="fcard-actions">
+                <button type="button" class="btn-inspect-trigger" data-project-id="gemini-live-engine">
+                  <span>INSPECT AI ARCHITECTURE</span>
+                  <span class="btn-arrow">↗</span>
+                </button>
+                <a href="https://github.com/uzairnaikoo" target="_blank" rel="noopener noreferrer" class="btn-launch-live-fcard">
+                  <span>🐙 GITHUB REPO</span>
+                  <span class="btn-arrow">↗</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 6: Mechatronics Bench & High-Speed CSI Vision Pipeline -->
+          <article class="flagship-card glass-cut" data-category="iot-hardware robotics">
+            <div class="fcard-badge">HARDWARE LAB</div>
+            <div class="fcard-media">
+              <img src="/omni/omni_chassis_top.jpg" alt="Robotics Bench & Power Bus" />
+              <div class="fcard-scanline"></div>
+              <div class="fcard-status-pill"><span class="pulse-dot-green"></span> DUAL RAIL 12V/5V BUS</div>
+            </div>
+            <div class="fcard-content">
+              <div class="fcard-tag-row">
+                <span class="fcard-tag">MECHATRONICS</span>
+                <span class="fcard-chip">LM2596 + OPTOCOUPLERS</span>
+              </div>
+              <h3 class="fcard-title">Robotics Bench &amp; Dual-Rail Power Distribution</h3>
+              <p class="fcard-desc">
+                High-current dual rail 5.1V/12V power supply with flyback diode suppression, optical signal isolation, and reverse polarity protection, feeding MIPI-CSI camera streaming and high-torque motors.
+              </p>
+              <div class="fcard-tech-pills">
+                <span>Dual LM2596 Regulators</span>
+                <span>Flyback Protection</span>
+                <span>Optocoupler Isolation</span>
+                <span>OV5647 CSI Camera</span>
+              </div>
+              <div class="fcard-actions">
+                <button type="button" class="btn-inspect-trigger" data-project-id="omni-hardware-lab">
+                  <span>INSPECT BUS SCHEMATICS</span>
+                  <span class="btn-arrow">↗</span>
+                </button>
+                <a href="#omni-showcase" class="btn-launch-live-fcard">
+                  <span>🤖 O.M.N.I HARDWARE</span>
+                  <span class="btn-arrow">↓</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 7: Home Automated IoT System (Hardware & Smart Automation) -->
+          <article class="flagship-card card-featured glass-cut" data-category="iot-hardware">
+            <div class="fcard-badge">HARDWARE &amp; SMART IOT</div>
+            <div class="fcard-media">
+              <img src="/achievements/photo_2026-10-05_16-50-39.jpg" alt="Home Automated IoT System by Uzair Farooq Naikoo" />
+              <div class="fcard-scanline"></div>
+              <div class="fcard-status-pill"><span class="pulse-dot-green"></span> HARDWARE VERIFIED</div>
+            </div>
+            <div class="fcard-content">
+              <div class="fcard-tag-row">
+                <span class="fcard-tag">HARDWARE // SMART IOT</span>
+                <span class="fcard-chip">BHARTI FOUNDATION &amp; AGS WUZUR</span>
+              </div>
+              <h3 class="fcard-title">Home Automated IoT System — Smart Energy &amp; Appliance Telemetry</h3>
+              <p class="fcard-desc">
+                High-efficiency IoT home automation prototype engineered with dynamic energy consumption optimization, smart thermal regulation, remote appliance control, and automatic overheat protection cutoffs for geysers and air conditioning units. Built and demonstrated with high school teammates under the Bharti Foundation initiative.
+              </p>
+              <div class="fcard-tech-pills">
+                <span>Microcontroller Automation</span>
+                <span>Relay Switching Matrix</span>
+                <span>Thermal Sensors</span>
+                <span>Energy Optimization</span>
+                <span>Appliance Telemetry</span>
+                <span>Fail-Safe Overheat Cutoff</span>
+              </div>
+              <div class="fcard-metrics-grid">
+                <div class="fmetric"><span class="mval">&lt; 10ms</span><span class="mlbl">Relay Speed</span></div>
+                <div class="fmetric"><span class="mval">Auto</span><span class="mlbl">Thermal Cutoff</span></div>
+                <div class="fmetric"><span class="mval">Smart</span><span class="mlbl">Energy Saver</span></div>
+              </div>
+              <div class="fcard-actions">
+                <a href="#iot-automation" class="btn-launch-live-fcard">
+                  <span>🏠 EXPLORE IOT SYSTEM SPECS</span>
+                  <span class="btn-arrow">↓</span>
+                </a>
+                <button type="button" class="btn-inspect-trigger" data-project-id="home-iot-system">
+                  <span>INSPECT HARDWARE SPECS</span>
+                  <span class="btn-arrow">↗</span>
+                </button>
+                <a href="https://github.com/uzairnaikoo" target="_blank" rel="noopener noreferrer" class="btn-inspect-trigger">
+                  <span>🐙 GITHUB @uzairnaikoo</span>
+                  <span class="btn-arrow">↗</span>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         3. DEDICATED O.M.N.I 1.0 AUTONOMOUS ROBOTICS SHOWCASE SECTION
+         Physical Hardware, Animated Video Player (with Sound), Visor & Mechatronics
+         ================================================================= -->
+    <section class="omni-showcase-section" id="omni-showcase" aria-label="O.M.N.I 1.0 Autonomous Robot">
+      <div class="section-container">
+        <div class="omni-main-card glass-cut">
+          <div class="omni-header-row">
+            <div>
+              <div class="omni-tag-pill">
+                <span class="badge-dot-cyan"></span>
+                <span>PHYSICAL ROBOTICS // FULL-DUPLEX AUTONOMOUS COMPANION</span>
+              </div>
+              <h2 class="omni-title">O.M.N.I 1.0 — AUTONOMOUS ROBOTIC COMPANION</h2>
+              <p class="omni-subtitle">
+                Engineered from bare silicon, acrylic chassis, and custom firmware by <strong>Uzair Farooq Naikoo</strong>. Combines on-device motor kinematics, live sub-0.69s multimodal LLM voice streaming, ultrasonic echolocation, and custom animated cybernetic eye expressions.
+              </p>
+            </div>
+            <div class="omni-actions-row">
+              <a href="https://github.com/uzairnaikoo" target="_blank" rel="noopener noreferrer" class="btn-omni-action primary">
+                <span>🐙 GITHUB REPOSITORY</span>
+                <span>↗</span>
+              </a>
+              <button type="button" class="btn-omni-action secondary" data-modal="hardware">
+                <span>🔧 INSPECT PINOUTS</span>
+                <span>↗</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="omni-grid">
+            <!-- Left: Animated Live Video Player with Audio Controls -->
+            <div class="omni-video-column">
+              <div class="omni-video-wrapper glass-cut">
+                <video id="omni-video" class="omni-video-el" src="/omni/omni_demo_video.mp4" poster="/omni/omni_video_poster.jpg" autoplay loop muted playsinline></video>
+                
+                <!-- Video HUD Overlay -->
+                <div class="video-hud-overlay">
+                  <div class="video-hud-badge">
+                    <span class="live-rec-dot"></span>
+                    <span>LIVE PHYSICAL DEMO</span>
+                  </div>
+                  <div class="video-hud-metrics">
+                    <span>720×1280 · 30 FPS</span>
+                  </div>
+                </div>
+
+                <!-- Video Controls Dock with Real Sound Mute/Unmute Toggle -->
+                <div class="video-controls-dock">
+                  <button type="button" id="omni-audio-toggle" class="btn-audio-toggle" aria-label="Toggle Sound">
+                    <div class="sound-wave-icon" id="sound-wave-icon">
+                      <span class="bar bar-1"></span>
+                      <span class="bar bar-2"></span>
+                      <span class="bar bar-3"></span>
+                      <span class="bar bar-4"></span>
+                    </div>
+                    <span id="audio-toggle-label">UNMUTE SOUND</span>
+                  </button>
+                  <button type="button" id="omni-playback-toggle" class="btn-playback-toggle" aria-label="Toggle Playback">
+                    <span id="playback-icon">❚❚</span>
+                    <span id="playback-label">PAUSE</span>
+                  </button>
+                </div>
+              </div>
+              <div style="margin-top: 0.8rem; font-family: var(--font-mono); font-size: 0.68rem; color: rgba(255,255,255,0.55); text-align: center;">
+                // AUTHENTIC AUDIO: CLICK "UNMUTE SOUND" TO HEAR LIVE MOTORS &amp; SPEECH
+              </div>
+            </div>
+
+            <!-- Right: High-Res Physical Photos & Architecture Specs -->
+            <div class="omni-details-column">
+              <div class="omni-photos-grid">
+                <!-- Photo 1: Visor Display & Cyber Eyes -->
+                <article class="omni-photo-card glass-cut">
+                  <div class="omni-photo-wrap">
+                    <img src="/omni/omni_front_display.jpg" alt="O.M.N.I 1.0 Front Visor with Animated Eyes" class="omni-photo-img" loading="lazy" />
+                    <div class="omni-photo-badge">VISOR KINEMATICS</div>
+                  </div>
+                  <h4 class="omni-photo-title">Interactive Visor &amp; Cyber Eyes</h4>
+                  <p class="omni-photo-desc">
+                    Custom ILI9486 SPI TFT running 60 FPS animated cybernetic eye expressions, synchronized in real time with conversational emotion and obstacle radar alerts.
+                  </p>
+                </article>
+
+                <!-- Photo 2: Chassis Mechatronics Deck -->
+                <article class="omni-photo-card glass-cut">
+                  <div class="omni-photo-wrap">
+                    <img src="/omni/omni_chassis_top.jpg" alt="O.M.N.I 1.0 Chassis Top Mechatronics Deck" class="omni-photo-img" loading="lazy" />
+                    <div class="omni-photo-badge">MECHATRONICS CORE</div>
+                  </div>
+                  <h4 class="omni-photo-title">Embedded Compute &amp; Power Bus</h4>
+                  <p class="omni-photo-desc">
+                    Raspberry Pi 4 Quad-Core compute unit, dual L298N H-Bridge motor controller, LM2596 high-efficiency DC-DC buck regulators, and ultrasonic sonar sensors.
+                  </p>
+                </article>
+              </div>
+
+              <!-- Specs Breakdown Table -->
+              <div class="omni-specs-panel glass-cut">
+                <div class="omni-specs-heading">
+                  <span>⚡ HARDWARE &amp; NEURAL ARCHITECTURE TELEMETRY</span>
+                </div>
+                <div class="omni-specs-table">
+                  <div class="omni-spec-box">
+                    <div class="omni-spec-key">Core CPU</div>
+                    <div class="omni-spec-val">Raspberry Pi 4 (Quad 1.5GHz)</div>
+                  </div>
+                  <div class="omni-spec-box">
+                    <div class="omni-spec-key">Drive System</div>
+                    <div class="omni-spec-val">4WD Differential DC Motors</div>
+                  </div>
+                  <div class="omni-spec-box">
+                    <div class="omni-spec-key">Motor Driver</div>
+                    <div class="omni-spec-val">L298N Dual H-Bridge PWM</div>
+                  </div>
+                  <div class="omni-spec-box">
+                    <div class="omni-spec-key">Radar Sonar</div>
+                    <div class="omni-spec-val">HC-SR04 Ultrasonic Sonar</div>
+                  </div>
+                  <div class="omni-spec-box">
+                    <div class="omni-spec-key">AI Streaming</div>
+                    <div class="omni-spec-val">Gemini Live WebSocket (0.69s)</div>
+                  </div>
+                  <div class="omni-spec-box">
+                    <div class="omni-spec-key">Power Rails</div>
+                    <div class="omni-spec-val">Dual LM2596 Regulators (12V/5.1V)</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         4. DEDICATED SMART IOT HOME AUTOMATION SECTION
+         Hardware Demonstration, Relay Telemetry, Safety Cutoffs
+         ================================================================= -->
+    <section class="iot-showcase-section" id="iot-automation" aria-label="Home Automated IoT System">
+      <div class="section-container">
+        <div class="iot-main-card glass-cut">
+          <div class="omni-header-row">
+            <div>
+              <div class="omni-tag-pill">
+                <span class="badge-dot-cyan"></span>
+                <span>EMBEDDED HARDWARE // SMART APPLIANCE &amp; ENERGY TELEMETRY</span>
+              </div>
+              <h2 class="omni-title">HOME AUTOMATED IOT SYSTEM</h2>
+              <p class="omni-subtitle">
+                Engineered by <strong>Uzair Farooq Naikoo</strong> under the <strong>Bharti Airtel Foundation QSP initiative</strong> at Army Goodwill School Wuzur. Designed to eliminate electrical fire risks, prevent energy waste, and provide real-time smart relay automation for heavy residential appliances.
+              </p>
+            </div>
+            <div class="omni-actions-row">
+              <button type="button" class="btn-omni-action primary" data-modal="hardware">
+                <span>⚡ HARDWARE PINOUTS</span>
+                <span>↗</span>
+              </button>
+              <a href="https://github.com/uzairnaikoo" target="_blank" rel="noopener noreferrer" class="btn-omni-action secondary">
+                <span>🐙 GITHUB @uzairnaikoo</span>
+                <span>↗</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="iot-content-grid">
+            <!-- Left: Authentic Hardware Photos -->
+            <div class="iot-photo-strip">
+              <div class="iot-photo-box iot-lead-photo glass-cut">
+                <img src="/achievements/photo_2026-10-05_16-50-39.jpg" alt="Uzair Farooq Naikoo demonstrating the Home Automated IoT System at AGS Wuzur" loading="lazy" />
+                <div class="iot-photo-caption">
+                  <span>AGS WUZUR &amp; BHARTI AIRTEL FOUNDATION · LIVE DEMO BOARD</span>
+                </div>
+              </div>
+              <div class="iot-photo-box glass-cut">
+                <img src="/achievements/photo_2026-10-05_16-50-34.jpg" alt="Home Automated IoT System live J&K competition booth demo" loading="lazy" />
+                <div class="iot-photo-caption">
+                  <span>J&amp;K STATE COMPETITION LIVE BOOTH</span>
+                </div>
+              </div>
+              <div class="iot-photo-box glass-cut">
+                <img src="/achievements/photo_2026-10-05_16-50-38.jpg" alt="Hardware testing bench and wiring demonstration" loading="lazy" />
+                <div class="iot-photo-caption">
+                  <span>RELAY TESTING BENCH &amp; WIRING</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right: Technical Highlights & Fire-Safety Architecture -->
+            <div class="iot-details-column">
+              <div class="iot-feature-box glass-cut">
+                <h4 class="iot-feature-title">
+                  <span>🔥 Dynamic Thermal Safety &amp; Fire Protection Cutoff</span>
+                </h4>
+                <p class="iot-feature-desc">
+                  Monitors continuous temperature on heavy load lines (such as high-wattage water geysers and AC compressors). If prolonged overheat thresholds or short-circuit anomalies are sensed, the microcontroller executes an automatic hardware cut-off in under 10 milliseconds.
+                </p>
+              </div>
+
+              <div class="iot-feature-box glass-cut">
+                <h4 class="iot-feature-title">
+                  <span>⚡ Smart Load Switching &amp; Energy Telemetry</span>
+                </h4>
+                <p class="iot-feature-desc">
+                  Utilizes ESP8266 and ESP32 low-power nodes communicating over ESP-NOW and MQTT. Dynamically regulates power consumption across peak hours, saving residential electricity and extending appliance operational lifespan.
+                </p>
+              </div>
+
+              <div class="iot-feature-box glass-cut">
+                <h4 class="iot-feature-title">
+                  <span>📱 Remote WiFi &amp; Local Mesh Redundancy</span>
+                </h4>
+                <p class="iot-feature-desc">
+                  Supports dual-mode control: cloud telemetry for remote mobile access, with an automatic fallback to local peer-to-peer ESP-NOW mesh if external internet connectivity drops.
+                </p>
+              </div>
+
+              <!-- Claude for Startups / Open Source Platform Pitch Banner -->
+              <div class="startup-pitch-banner glass-cut">
+                <div class="pitch-badge-row">
+                  <span class="pitch-tag">// OPEN-SOURCE ROBOTICS &amp; MULTIMODAL AI PLATFORM</span>
+                  <span class="badge-dot-green"></span>
+                </div>
+                <h3 class="pitch-title">Autonomous AI Developer Platform</h3>
+                <p class="pitch-desc">
+                  Building the next frontier of physical AI companions and smart telemetry nodes. Combining high-speed LLM APIs, edge computer vision, and bare-metal firmware into an open, extensible developer ecosystem.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         5. FULL CYBER FOOTER (AUTHENTICATED & DIRECT UPLINK)
+         ================================================================= -->
+    <footer id="portfolio-footer" class="portfolio-footer" aria-label="Site Footer">
+      <div class="footer-grid">
+        <!-- Brand & Identity Column -->
+        <div class="footer-col footer-col-brand">
+          <div class="footer-brand">
+            <span class="f-brand-name">UZAIR</span>
+            <span class="f-brand-sub">FAROOQ NAIKOO</span>
+            <span class="f-brand-badge">®</span>
+          </div>
+          <p class="f-brand-manifesto">
+            Specialized in Multimodal AI Systems, Edge Robotics, Embedded IoT Hardware, and High-Performance Interactive Architectures.
+          </p>
+
+          <!-- Authentic Signature Watermark Stamp -->
+          <div class="footer-sig-wrap" style="margin: 1.2rem 0;">
+            <img src="/signature.png" alt="Uzair Farooq Naikoo Official Signature" style="max-height: 40px; width: auto; filter: drop-shadow(0 0 8px rgba(0,240,255,0.7));" />
+            <span style="display: block; font-family: var(--font-mono); font-size: 0.6rem; color: rgba(255,255,255,0.45); margin-top: 4px; letter-spacing: 0.1em;">
+              // VERIFIED ARCHITECT SEAL · UFN-AUTH-2026
+            </span>
+          </div>
+
+          <div class="footer-status-pill">
+            <span class="pulse-indicator"></span>
+            <span>SYSTEM STATUS: OPERATIONAL & READY FOR COLLABORATION</span>
+          </div>
+        </div>
+
+        <!-- Direct Uplink Channel Column -->
+        <div class="footer-col footer-col-contact">
+          <div class="f-col-title">DIRECT UPLINK</div>
+          <div class="footer-email-box">
+            <span class="f-email-label">PRIMARY INBOX</span>
+            <a href="mailto:contact@uzairnaikoo.cyou" class="footer-email-link">contact@uzairnaikoo.cyou</a>
+            <button type="button" class="btn-copy-footer-email" id="btn-copy-footer-email">
+              <span>COPY EMAIL</span>
+            </button>
+          </div>
+          <div class="f-location-tag">
+            <span>LOC: EARTH · 36.8508° N, 75.9775° W</span>
+          </div>
+        </div>
+
+        <!-- Navigation Links Column -->
+        <div class="footer-col footer-col-nav">
+          <div class="f-col-title">ARCHIVE &amp; LABS</div>
+          <ul class="f-nav-links">
+            <li><a href="#flagship-projects" class="f-link-btn" style="text-decoration: none;">⚡ Flagship Projects</a></li>
+            <li><a href="#omni-showcase" class="f-link-btn" style="color: var(--cyan-accent); text-decoration: none;">🤖 O.M.N.I 1.0 Robotics &amp; Video</a></li>
+            <li><a href="#iot-automation" class="f-link-btn" style="color: var(--cyan-accent); text-decoration: none;">🏠 Home Automated IoT System</a></li>
+            <li><a href="https://github.com/uzairnaikoo" target="_blank" rel="noopener noreferrer" class="f-link-btn" style="color: #d8b4fe; text-decoration: none;">🐙 GitHub Profile (@uzairnaikoo)</a></li>
+            <li><button type="button" class="f-link-btn" data-modal="hardware">🔧 Hardware Lab &amp; Pinouts</button></li>
+            <li><button type="button" class="f-link-btn" data-modal="contact">✉ Direct Transmission Uplink</button></li>
+          </ul>
+        </div>
+
+        <!-- Channels & Social Column -->
+        <div class="footer-col footer-col-social">
+          <div class="f-col-title">TRANSMISSION CHANNELS</div>
+          <div class="social-tags-list">
+            <a href="mailto:contact@uzairnaikoo.cyou" class="social-chip">EMAIL UPLINK</a>
+            <a href="https://github.com/uzairnaikoo" target="_blank" rel="noopener noreferrer" class="social-chip">GITHUB @uzairnaikoo</a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-chip">LINKEDIN</a>
+            <button type="button" class="social-chip" id="footer-contact-trigger">LET'S BUILD</button>
+          </div>
+          <button type="button" class="btn-scroll-top" id="btn-scroll-top" title="Back to top">
+            <span>▲ BACK TO TOP</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="footer-bottom-line">
+        <div class="f-bot-left">© 2026 UZAIR FAROOQ NAIKOO. ALL RIGHTS RESERVED.</div>
+        <div class="f-bot-center">ENGINEERED WITH PASSION, SILICON &amp; MULTIMODAL CODE</div>
+        <div class="f-bot-right">NODE_ID: UFN_MATRIX_01 // SECURE</div>
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- =================================================================
+       4. REAL 3D THREE.JS CYBER BUDDY COMPANION (KIRA-01)
+       Accompanies user along scroll, tracks cursor, points, blinks
+       ================================================================= -->
+  <aside id="cyber-buddy-companion" class="cyber-buddy-companion" aria-label="Interactive Cyber AI Companion KIRA">
+    <!-- Holographic Speech Bubble -->
+    <div class="buddy-speech-bubble" id="buddy-speech-bubble">
+      <div class="bubble-header">
+        <span class="bubble-badge">✦ KIRA-01 // 3D COMPANION</span>
+        <button type="button" class="btn-bubble-minimize" id="btn-bubble-minimize" title="Toggle companion speech">✕</button>
+      </div>
+      <p class="bubble-text" id="buddy-speech-text">
+        KIRA-01 Core Active // Neural Telemetry &amp; Physical Robotics Online
+      </p>
+      <div class="bubble-pointer" aria-hidden="true"></div>
+    </div>
+
+    <!-- 3D Three.js WebGL Container -->
+    <div class="buddy-avatar-wrapper" id="buddy-avatar" role="button" tabindex="0" title="Click to interact with KIRA">
+      <div class="buddy-ambient-halo" aria-hidden="true"></div>
+      <div id="kira-3d-canvas-container" class="kira-3d-canvas-container"></div>
+    </div>
+  </aside>
+
+  <!-- =================================================================
+       5. MODALS: HARDWARE LAB, CONTACT, CARD INSPECT
+       ================================================================= -->
+
+  <!-- HARDWARE & IOT PINOUT MODAL -->
+  <div class="hud-modal" id="modal-hardware" aria-hidden="true" role="dialog">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-card">
+      <div class="modal-header">
+        <div class="modal-tag"><span class="modal-dot"></span> HARDWARE LAB & SCHEMATICS</div>
+        <button type="button" class="modal-close-btn" data-close-modal aria-label="Close modal">✕</button>
+      </div>
+      <div class="modal-body">
+        <div class="hardware-specs-container">
+          <div class="spec-section">
+            <h4 class="spec-heading">⚡ Robotics Pinout Architecture</h4>
+            <div class="spec-table">
+              <div class="spec-row">
+                <span class="spec-key">L298N Motor Driver</span>
+                <span class="spec-val">GPIO 18 (PWM Left), GPIO 27, 22, 23, 16, GPIO 13 (PWM Right)</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-key">TFT 3.5" Display</span>
+                <span class="spec-val">SPI0 (GPIO 7-11), Touch IRQ GPIO 17, DC GPIO 24, Reset GPIO 25</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-key">Ultrasonic Sensor</span>
+                <span class="spec-val">TRIG GPIO 4, ECHO GPIO 26 (1kΩ/2kΩ voltage divider protection)</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-key">Camera Stream</span>
+                <span class="spec-val">OV5647 5MP via MIPI-CSI Ribbon cable interface</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="spec-section">
+            <h4 class="spec-heading">🔧 Microcontrollers & Protocols</h4>
+            <div class="chips-grid">
+              <div class="chip-item">
+                <div class="chip-name">ESP8266 & ESP32</div>
+                <div class="chip-sub">Sensor node telemetry & wireless control</div>
+              </div>
+              <div class="chip-item">
+                <div class="chip-name">Raspberry Pi 4 / Embedded Linux</div>
+                <div class="chip-sub">Core edge compute & neural orchestration</div>
+              </div>
+              <div class="chip-item">
+                <div class="chip-name">Arduino CLI & C++ Toolchain</div>
+                <div class="chip-sub">Firmware compilation & flash deployment</div>
+              </div>
+              <div class="chip-item">
+                <div class="chip-name">UART, SPI & I2C</div>
+                <div class="chip-sub">High-speed inter-chip bus communication</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTACT / LET'S BUILD MODAL -->
+  <div class="hud-modal" id="modal-contact" aria-hidden="true" role="dialog">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-card contact-card">
+      <div class="modal-header">
+        <div class="modal-tag"><span class="modal-dot"></span> INITIATE TRANSMISSION // UZAIR FAROOQ NAIKOO</div>
+        <button type="button" class="modal-close-btn" data-close-modal aria-label="Close modal">✕</button>
+      </div>
+      <div class="modal-body">
+        <div class="direct-uplink-banner">
+          <div class="uplink-label">OFFICIAL DIRECT UPLINK INBOX</div>
+          <div class="uplink-action-box">
+            <a href="mailto:contact@uzairnaikoo.cyou" class="uplink-email-link" title="Send transmission to Uzair Farooq Naikoo">
+              <span class="email-icon">✉</span>
+              <span class="email-address">contact@uzairnaikoo.cyou</span>
+            </a>
+            <button type="button" class="btn-copy-email" id="btn-copy-modal-email" title="Copy email address">
+              <span class="copy-text">COPY EMAIL</span>
+            </button>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contact-form" onsubmit="event.preventDefault(); alert('Transmission Received! Uzair will establish uplink shortly.');">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="contact-name">YOUR IDENTITY / ORG</label>
+              <input type="text" id="contact-name" placeholder="Dr. / Engineer / Founder..." required />
+            </div>
+            <div class="form-group">
+              <label for="contact-email">UPLINK EMAIL</label>
+              <input type="email" id="contact-email" placeholder="name@domain.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="contact-topic">PROJECT DISCIPLINE</label>
+            <select id="contact-topic">
+              <option value="robotics">Autonomous Robotics / O.M.N.I Tech</option>
+              <option value="iot">Embedded IoT / ESP32 Hardware</option>
+              <option value="ai">Real-Time Multimodal AI Integration</option>
+              <option value="web">Cybernetic Web / Interactive UI</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="contact-msg">TRANSMISSION MESSAGE</label>
+            <textarea id="contact-msg" rows="4" placeholder="Detail your project requirements, hardware specs, or collaboration goals..." required></textarea>
+          </div>
+          <button type="submit" class="btn-submit-transmission">
+            <span>SEND TRANSMISSION</span>
+            <span class="pulse-indicator"></span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- HARDWARE CARD INSPECTION MODAL -->
+  <div class="hud-modal" id="modal-card-inspect" aria-hidden="true" role="dialog">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-card inspect-modal-card">
+      <div class="modal-header">
+        <div class="modal-tag"><span class="modal-dot"></span> HARDWARE TELEMETRY INSPECTION // O.M.N.I SYSTEM</div>
+        <button type="button" class="modal-close-btn" data-close-modal aria-label="Close modal">✕</button>
+      </div>
+      <div class="modal-body">
+        <div class="inspect-grid">
+          <div class="inspect-media">
+            <img id="inspect-img" src="" alt="Hardware image preview" />
+            <div class="inspect-scanline"></div>
+            <div class="inspect-corner corner-tl">+</div>
+            <div class="inspect-corner corner-tr">+</div>
+            <div class="inspect-corner corner-bl">+</div>
+            <div class="inspect-corner corner-br">+</div>
+          </div>
+          <div class="inspect-details">
+            <div class="inspect-tag-badge" id="inspect-tag">ROBOTICS // O.M.N.I</div>
+            <h3 class="inspect-title" id="inspect-title">Module Title</h3>
+            <p class="inspect-desc" id="inspect-desc">Detailed hardware description...</p>
+            <div class="inspect-specs-box">
+              <div class="spec-heading">⚡ TELEMETRY & HARDWARE BUS</div>
+              <div class="inspect-specs-list" id="inspect-specs-list">
+                <!-- Populated dynamically -->
+              </div>
+            </div>
+            <div class="inspect-status-row">
+              <div class="stat-pill"><span class="dot-green"></span> BUS ACTIVE</div>
+              <div class="stat-pill"><span class="dot-cyan"></span> 60FPS SYNCHRONIZED</div>
+              <div class="stat-pill"><span class="dot-red"></span> VERIFIED</div>
+            </div>
+            <div class="inspect-actions-row" id="inspect-actions-row" style="display: none;">
+              <a href="#" id="inspect-live-link" target="_blank" rel="noopener noreferrer" class="btn-launch-live-app">
+                <span class="btn-icon">🚀</span>
+                <span class="btn-text">LAUNCH LIVE WEB APP</span>
+                <span class="btn-arrow">↗</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="/main.js"></script>
+</body>
+</html>

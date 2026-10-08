@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>3D Holographic Archive — Uzair Farooq Naikoo</title>
+  <meta name="description" content="3D Holographic Cylinder Archive of Uzair Farooq Naikoo's Robotics, Embedded IoT, and Multimodal AI creations." />
+  
+  <!-- Modern Sleek Google Fonts (Outfit, Rajdhani, JetBrains Mono, Plus Jakarta Sans, Syne) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Rajdhani:wght@500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body class="gallery-page-body">
+  <!-- Atmospheric Glow Overlays -->
+  <div class="ambient-glow glow-cyan" aria-hidden="true"></div>
+  <div class="ambient-glow glow-red" aria-hidden="true"></div>
+  <div class="cinematic-overlay" aria-hidden="true"></div>
+
+  <!-- Outer HUD Frame -->
+  <div class="hud-outer-frame gallery-hud-frame">
+    <!-- Corner Crosshairs -->
+    <div class="hud-corner corner-tl" aria-hidden="true">+</div>
+    <div class="hud-corner corner-tr" aria-hidden="true">+</div>
+    <div class="hud-corner corner-bl" aria-hidden="true">+</div>
+    <div class="hud-corner corner-br" aria-hidden="true">+</div>
+
+    <!-- ================= TOP BAR ================= -->
+    <header class="hud-top-bar">
+      <div class="hud-brand">
+        <a href="/" class="brand-link" title="Return to Main Core">
+          <span class="brand-name">UZAIR</span>
+          <span class="brand-sub">FAROOQ NAIKOO</span>
+          <span class="brand-badge">®</span>
+        </a>
+        <span class="brand-tagline">// 3D HOLOGRAPHIC ARCHIVE</span>
+      </div>
+
+      <div class="top-nav-divider" aria-hidden="true">+</div>
+
+      <!-- Navigation to return home -->
+      <nav class="hud-nav" aria-label="Archive Navigation">
+        <a href="/" class="nav-btn nav-return-btn">
+          <span class="btn-arrow">←</span>
+          <span>RETURN TO CORE</span>
+        </a>
+        <span class="nav-dot">·</span>
+        <a href="/certificates.html" class="nav-btn nav-btn-glow" title="View Official Certificates Archive">
+          <span>📜 CERTIFICATES (8)</span>
+        </a>
+        <span class="nav-dot">·</span>
+        <button type="button" class="nav-btn" data-modal="hardware">HARDWARE LAB</button>
+        <span class="nav-dot">·</span>
+        <button type="button" class="nav-btn" data-modal="contact">CONTACT</button>
+      </nav>
+
+      <div class="top-nav-divider" aria-hidden="true">+</div>
+
+      <div class="hud-top-action">
+        <a href="/#contact" class="nav-btn nav-contact-btn" title="Initiate Contact">
+          <span class="btn-dot-live"></span>
+          <span>GET IN TOUCH</span>
+          <span class="btn-arrow">↗</span>
+        </a>
+      </div>
+    </header>
+
+    <!-- ================= 3D HOLOGRAPHIC CONCAVE CYLINDER STAGE ================= -->
+    <main class="standalone-gallery-main">
+      <div class="holo-header">
+        <div class="holo-title-group">
+          <div class="holo-badge">
+            <span class="holo-badge-dot"></span>
+            <span class="holo-badge-text">3D HOLOGRAPHIC MATRIX // UZAIR FAROOQ NAIKOO</span>
+          </div>
+          <h1 class="holo-title">PROJECT ARCHIVE & GALLERY</h1>
+          <p class="holo-subtitle">
+            Curved 3D inward matrix. Drag horizontally, use scroll wheel, or use arrow keys to spin. Click any module to inspect telemetry.
+          </p>
+        </div>
+
+        <!-- Category Filter Tabs -->
+        <div class="holo-category-tabs" id="gallery-category-tabs" role="tablist">
+          <button type="button" class="cat-pill active" data-cat="all" role="tab" aria-selected="true">ALL WORKS</button>
+          <button type="button" class="cat-pill" data-cat="hardware" role="tab" aria-selected="false">⚡ HARDWARE</button>
+          <button type="button" class="cat-pill" data-cat="software" role="tab" aria-selected="false">💻 SOFTWARE & AI</button>
+          <button type="button" class="cat-pill" data-cat="certificates" role="tab" aria-selected="false">📜 CERTIFICATES (8)</button>
+          <button type="button" class="cat-pill" data-cat="gallery" role="tab" aria-selected="false">📷 MY GALLERY</button>
+        </div>
+
+        <!-- Controls Cluster -->
+        <div class="holo-controls">
+          <button type="button" class="holo-nav-btn" id="holo-prev-btn" title="Rotate Left (Arrow Left)" aria-label="Rotate Left">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+          </button>
+
+          <div class="holo-counter-pill" id="holo-counter">01 / 09</div>
+
+          <button type="button" class="holo-nav-btn" id="holo-next-btn" title="Rotate Right (Arrow Right)" aria-label="Rotate Right">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- 3D Concave Cylinder Viewport -->
+      <div class="holo-stage-container standalone-stage" id="holo-stage-container" title="Drag horizontally to spin 3D cylinder">
+        <!-- Curved Ambient Hologram Grid / Rings -->
+        <div class="holo-grid-ring" aria-hidden="true"></div>
+        <div class="holo-beam-top" aria-hidden="true"></div>
+        <div class="holo-beam-bottom" aria-hidden="true"></div>
+
+        <!-- The 3D Preserve-3D Cylinder Track -->
+        <div class="holo-cylinder-track" id="holo-cylinder-track">
+          <!-- Dynamically populated 3D cards -->
+        </div>
+      </div>
+
+      <!-- Bottom Interaction Hint & Telemetry Bar -->
+      <div class="holo-footer-hint">
+        <span class="hint-drag">◄ DRAG OR SCROLL TO ROTATE CYLINDER ►</span>
+        <span class="hint-divider">|</span>
+        <span class="hint-scroll">CLICK CARD TO INSPECT PINOUTS</span>
+        <span class="hint-divider">|</span>
+        <span class="hint-cloud" id="firebase-sync-status">⚡ FIREBASE SYNC ACTIVE</span>
+      </div>
+    </main>
+
+    <!-- ================= BOTTOM BAR ================= -->
+    <footer class="hud-bottom-bar">
+      <div class="hud-bottom-left">
+        <span class="bottom-icon">📡</span>
+        <span class="bottom-code">ARCHIVE_STAGE // NODE_01 // UFN_MATRIX</span>
+      </div>
+
+      <div class="hud-bottom-center">
+        <a href="/" class="return-pill-link">
+          <span class="return-arrow">←</span>
+          <span>RETURN TO HOME & VIDEO EXPERIENCE</span>
+        </a>
+      </div>
+
+      <div class="hud-bottom-right">
+        <span class="tag-y2k">HARDWARE × AI</span>
+        <span class="tag-alert" aria-hidden="true">▲</span>
+        <div class="frame-counter-pill">3D MATRIX</div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- =================================================================
+       MODALS: ADMIN AUTH, UPLOAD, CARD INSPECT, HARDWARE, CONTACT
+       ================================================================= -->
+
+
+  <!-- 3. HARDWARE CARD INSPECTION MODAL -->
+  <div class="hud-modal" id="modal-card-inspect" aria-hidden="true" role="dialog">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-card inspect-modal-card">
+      <div class="modal-header">
+        <div class="modal-tag"><span class="modal-dot"></span> HARDWARE TELEMETRY INSPECTION // O.M.N.I SYSTEM</div>
+        <button type="button" class="modal-close-btn" data-close-modal aria-label="Close modal">✕</button>
+      </div>
+      <div class="modal-body">
+        <div class="inspect-grid">
+          <div class="inspect-media">
+            <img id="inspect-img" src="" alt="Hardware image preview" />
+            <div class="inspect-scanline"></div>
+            <div class="inspect-corner corner-tl">+</div>
+            <div class="inspect-corner corner-tr">+</div>
+            <div class="inspect-corner corner-bl">+</div>
+            <div class="inspect-corner corner-br">+</div>
+          </div>
+          <div class="inspect-details">
+            <div class="inspect-tag-badge" id="inspect-tag">ROBOTICS // O.M.N.I</div>
+            <h3 class="inspect-title" id="inspect-title">Module Title</h3>
+            <p class="inspect-desc" id="inspect-desc">Detailed hardware description...</p>
+            <div class="inspect-specs-box">
+              <div class="spec-heading">⚡ TELEMETRY & HARDWARE BUS</div>
+              <div class="inspect-specs-list" id="inspect-specs-list">
+                <!-- Populated dynamically -->
+              </div>
+            </div>
+            <div class="inspect-status-row">
+              <div class="stat-pill"><span class="dot-green"></span> BUS ACTIVE</div>
+              <div class="stat-pill"><span class="dot-cyan"></span> 60FPS SYNCHRONIZED</div>
+              <div class="stat-pill"><span class="dot-red"></span> VERIFIED</div>
+            </div>
+            <div class="inspect-actions-row" id="inspect-actions-row" style="display: none;">
+              <a href="#" id="inspect-live-link" target="_blank" rel="noopener noreferrer" class="btn-launch-live-app">
+                <span class="btn-icon">🚀</span>
+                <span class="btn-text" id="inspect-live-text">LAUNCH LIVE WEB APP</span>
+                <span class="btn-arrow">↗</span>
+              </a>
+              <a href="#" id="inspect-raw-link" target="_blank" rel="noopener noreferrer" class="btn-launch-live-app btn-view-raw" style="display:none; margin-top: 8px; border-color: rgba(255, 26, 56, 0.45); color: #ff99aa;">
+                <span class="btn-icon">📜</span>
+                <span class="btn-text">INSPECT HIGH-RES MASTER SCAN</span>
+                <span class="btn-arrow">↗</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4. HARDWARE LAB MODAL -->
+  <div class="hud-modal" id="modal-hardware" aria-hidden="true" role="dialog">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-card">
+      <div class="modal-header">
+        <div class="modal-tag"><span class="modal-dot"></span> HARDWARE LAB & SCHEMATICS</div>
+        <button type="button" class="modal-close-btn" data-close-modal aria-label="Close modal">✕</button>
+      </div>
+      <div class="modal-body">
+        <div class="hardware-specs-container">
+          <div class="spec-section">
+            <h4 class="spec-heading">⚡ Robotics Pinout Architecture</h4>
+            <div class="spec-table">
+              <div class="spec-row">
+                <span class="spec-key">L298N Motor Driver</span>
+                <span class="spec-val">GPIO 18 (PWM Left), GPIO 27, 22, 23, 16, GPIO 13 (PWM Right)</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-key">TFT 3.5" Display</span>
+                <span class="spec-val">SPI0 (GPIO 7-11), Touch IRQ GPIO 17, DC GPIO 24, Reset GPIO 25</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-key">Ultrasonic Sensor</span>
+                <span class="spec-val">TRIG GPIO 4, ECHO GPIO 26 (1kΩ/2kΩ voltage divider protection)</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-key">Camera Stream</span>
+                <span class="spec-val">OV5647 5MP via MIPI-CSI Ribbon cable interface</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="spec-section">
+            <h4 class="spec-heading">🔧 Microcontrollers & Protocols</h4>
+            <div class="chips-grid">
+              <div class="chip-item">
+                <div class="chip-name">ESP8266 & ESP32</div>
+                <div class="chip-sub">Sensor node telemetry & wireless control</div>
+              </div>
+              <div class="chip-item">
+                <div class="chip-name">Raspberry Pi 4 / Embedded Linux</div>
+                <div class="chip-sub">Core edge compute & neural orchestration</div>
+              </div>
+              <div class="chip-item">
+                <div class="chip-name">Arduino CLI & C++ Toolchain</div>
+                <div class="chip-sub">Firmware compilation & flash deployment</div>
+              </div>
+              <div class="chip-item">
+                <div class="chip-name">UART, SPI & I2C</div>
+                <div class="chip-sub">High-speed inter-chip bus communication</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 5. CONTACT MODAL -->
+  <div class="hud-modal" id="modal-contact" aria-hidden="true" role="dialog">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-card contact-card">
+      <div class="modal-header">
+        <div class="modal-tag"><span class="modal-dot"></span> INITIATE TRANSMISSION // UZAIR FAROOQ NAIKOO</div>
+        <button type="button" class="modal-close-btn" data-close-modal aria-label="Close modal">✕</button>
+      </div>
+      <div class="modal-body">
+        <div class="direct-uplink-banner">
+          <div class="uplink-label">OFFICIAL DIRECT UPLINK INBOX</div>
+          <div class="uplink-action-box">
+            <a href="mailto:naikoouzair2@gmail.com" class="uplink-email-link" title="Send transmission to Uzair Farooq Naikoo">
+              <span class="email-icon">✉</span>
+              <span class="email-address">naikoouzair2@gmail.com</span>
+            </a>
+            <button type="button" class="btn-copy-email" id="btn-copy-gallery-email" title="Copy email address">
+              <span class="copy-text">COPY EMAIL</span>
+            </button>
+          </div>
+        </div>
+
+        <form class="contact-form" id="gallery-contact-form" onsubmit="event.preventDefault(); alert('Transmission Received! Uzair will establish uplink shortly.');">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="g-contact-name">YOUR IDENTITY / ORG</label>
+              <input type="text" id="g-contact-name" placeholder="Dr. / Engineer / Founder..." required />
+            </div>
+            <div class="form-group">
+              <label for="g-contact-email">UPLINK EMAIL</label>
+              <input type="email" id="g-contact-email" placeholder="name@domain.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="g-contact-topic">PROJECT DISCIPLINE</label>
+            <select id="g-contact-topic">
+              <option value="robotics">Autonomous Robotics / O.M.N.I Tech</option>
+              <option value="iot">Embedded IoT / ESP32 Hardware</option>
+              <option value="ai">Real-Time Multimodal AI Integration</option>
+              <option value="web">Cybernetic Web / Interactive UI</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="g-contact-msg">TRANSMISSION MESSAGE</label>
+            <textarea id="g-contact-msg" rows="4" placeholder="Detail your project requirements, hardware specs, or collaboration goals..." required></textarea>
+          </div>
+          <button type="submit" class="btn-submit-transmission">
+            <span>SEND TRANSMISSION</span>
+            <span class="pulse-indicator"></span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- =================================================================
+       3D REAL THREE.JS CYBER BUDDY COMPANION (KIRA-01)
+       ================================================================= -->
+  <aside id="cyber-buddy-companion" class="cyber-buddy-companion" aria-label="Interactive Cyber AI Companion KIRA">
+    <div class="buddy-speech-bubble" id="buddy-speech-bubble">
+      <div class="bubble-header">
+        <span class="bubble-badge">✦ KIRA-01 // 3D COMPANION</span>
+        <button type="button" class="btn-bubble-minimize" id="btn-bubble-minimize" title="Toggle companion speech">✕</button>
+      </div>
+      <p class="bubble-text" id="buddy-speech-text">
+        Welcome to the 3D Holographic Archive! Drag to spin the cylinder or click any module!
+      </p>
+      <div class="bubble-pointer" aria-hidden="true"></div>
+    </div>
+
+    <!-- 3D Three.js WebGL Container -->
+    <div class="buddy-avatar-wrapper" id="buddy-avatar" role="button" tabindex="0" title="Click to interact with KIRA">
+      <div class="buddy-ambient-halo" aria-hidden="true"></div>
+      <div id="kira-3d-canvas-container" class="kira-3d-canvas-container"></div>
+    </div>
+  </aside>
+
+  <script type="module" src="/gallery.js"></script>
+</body>
+</html>
