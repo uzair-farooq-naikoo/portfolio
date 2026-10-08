@@ -5,7 +5,7 @@
 
 [![Website](https://img.shields.io/badge/Live_Portfolio-uzairnaikoo.cyou-00F5FF?style=for-the-badge&logo=google-chrome&logoColor=000)](https://uzairnaikoo.cyou)
 [![Email](https://img.shields.io/badge/Founder_Inbox-contact@uzairnaikoo.cyou-FF0055?style=for-the-badge&logo=mail.ru&logoColor=fff)](mailto:contact@uzairnaikoo.cyou)
-[![GitHub](https://img.shields.io/badge/GitHub-@uzairnaikoo-181717?style=for-the-badge&logo=github&logoColor=fff)](https://github.com/uzairnaikoo)
+[![GitHub](https://img.shields.io/badge/GitHub-@uzair--farooq--naikoo-181717?style=for-the-badge&logo=github&logoColor=fff)](https://github.com/uzair-farooq-naikoo)
 [![Location](https://img.shields.io/badge/Location-India-00FF88?style=for-the-badge&logo=googlemaps&logoColor=000)](https://uzairnaikoo.cyou)
 
 <p align="center">
@@ -78,8 +78,8 @@ I engineer systems from bare silicon and microcontroller firmware up to distribu
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=uzairnaikoo&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00F5FF&text_color=94A3B8&icon_color=00F5FF" alt="Uzair Naikoo GitHub Stats" width="48%" />
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=uzairnaikoo&theme=tokyonight&hide_border=true&background=0D1117&ring=00F5FF&fire=FF0055&currStreakLabel=00FF88" alt="Uzair Naikoo GitHub Streak" width="48%" />
+<img src="https://github-readme-stats.vercel.app/api?username=uzair-farooq-naikoo&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00F5FF&text_color=94A3B8&icon_color=00F5FF" alt="Uzair Naikoo GitHub Stats" width="48%" />
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=uzair-farooq-naikoo&theme=tokyonight&hide_border=true&background=0D1117&ring=00F5FF&fire=FF0055&currStreakLabel=00FF88" alt="Uzair Naikoo GitHub Streak" width="48%" />
 
 </div>
 
