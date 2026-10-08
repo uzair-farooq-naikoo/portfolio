@@ -68,7 +68,6 @@ I engineer systems from bare silicon and microcontroller firmware up to distribu
 
 * 🏅 **Young Creators League (YCL) National Finalist** — Honored at Plaksha University for IoT Home Automation.
 * 🏆 **Young Scientist India (YSI 11th Edition) National Finalist** — Recognized nationwide for physical computing innovation.
-* 🚀 **ISRO YUVIKA (Young Scientist Programme)** — Selected for prestigious space science immersion.
 * 🎖️ **INNOFEST 2025 Innovation Award** — Awarded by Indian Army leadership at AGS Wuzur.
 * 📺 **News 18 Kashmir National Television Feature** — Broadcast interview showcasing autonomous robotics & IoT engineering.
 
