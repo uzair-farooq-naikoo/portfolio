@@ -1,0 +1,17 @@
+{
+  "name": "Uzair Farooq Naikoo — AI & Robotics Platform",
+  "short_name": "Uzair Naikoo",
+  "description": "Founder & AI Systems Architect. Creator of O.M.N.I 1.0 Autonomous Robot and Home Automated IoT.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#080c16",
+  "theme_color": "#00f0ff",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

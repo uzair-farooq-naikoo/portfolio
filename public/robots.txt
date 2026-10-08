@@ -1,0 +1,10 @@
+# Robots.txt for Uzair Farooq Naikoo Platform (https://www.uzairnaikoo.cyou)
+User-agent: *
+Allow: /
+
+# Prevent indexing of build artifacts or internal temp files
+Disallow: /dist/
+Disallow: /node_modules/
+
+# Canonical XML Sitemap for Search Engines (Google, Bing, Yandex, DuckDuckGo)
+Sitemap: https://www.uzairnaikoo.cyou/sitemap.xml
