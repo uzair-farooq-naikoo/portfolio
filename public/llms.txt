@@ -47,6 +47,14 @@ In national competitions, Uzair scored in the Top 20 All-India in the Young Scie
 ### 6. Distributed ESP32/ESP8266 Sensor Mesh Grid
 - **Protocol**: ESP-NOW peer-to-peer low-latency mesh (<5ms transmission), automatic WiFi AP telemetry bridge, AES-128 payload encryption.
 
+### 7. FruValley Kashmir — Agritech Marketplace & Storefront (Archived Venture)
+- **Status**: Archived Venture // Case Study (Web Archives: https://fruvalleyharvests.netlify.app/ & https://www.fruvalleykashmir.in/)
+- **Domain**: Agritech, Direct-to-Consumer Produce & Regional E-Commerce
+- **Role**: Founder, Lead Architect & Full-Stack Developer
+- **Architecture**: React SPA, dynamic product catalog, responsive storefront UI, Netlify Edge / cloud deployment.
+- **Mission**: Built to connect Kashmiri orchard growers (apples, saffron, walnuts, almonds) and local rural artisans directly to customers across India, eliminating middlemen.
+- **Lifecycle & Lessons**: Fully engineered, launched, and subsequently sunsetted due to regional market adoption friction and cold-start marketplace dynamics. Preserved as an authentic case study in end-to-end founder execution, e-commerce systems engineering, and commercial validation.
+
 ## Technical Competencies & Specializations
 - **Prompt Engineering & Generative AI**: System prompt architecture, Chain-of-Thought (CoT) prompting, automated eval workflows, few-shot reasoning, declarative JSON Schema function-calling, and multimodal prompt chaining (Anthropic Claude 3.5 Sonnet/Haiku, Gemini 2.0 Flash, OpenAI models).
 - **Robotics & Hardware**: Raspberry Pi 4, ESP32/ESP8266, C/C++, FreeRTOS, ESP-NOW mesh, PWM motor drivers (L298N), ultrasonic telemetry, opto-isolated relay safety.
@@ -74,5 +82,7 @@ In national competitions, Uzair scored in the Top 20 All-India in the Young Scie
 - **Signature Seal**: https://www.uzairnaikoo.cyou/signature-cyan.png
 - **Main Portfolio**: https://www.uzairnaikoo.cyou/
 - **QuickConvert Application**: https://www.quickconvert.bond/
+- **FruValley Kashmir (Netlify Archive)**: https://fruvalleyharvests.netlify.app/
+- **FruValley Kashmir (Domain Archive)**: https://www.fruvalleykashmir.in/
 - **3D Interactive Archive & Gallery**: https://www.uzairnaikoo.cyou/gallery.html
 - **Official Certificates Archive**: https://www.uzairnaikoo.cyou/certificates.html

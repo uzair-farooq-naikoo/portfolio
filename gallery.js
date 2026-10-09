@@ -204,6 +204,23 @@ const DEFAULT_CARDS = [
     ]
   },
   {
+    id: 'fruvalley-kashmir',
+    category: 'software',
+    title: 'FRUVALLEY KASHMIR — MARKETPLACE',
+    tag: 'VENTURE // ARCHIVED E-COMMERCE',
+    desc: 'Direct-to-consumer marketplace for Kashmiri produce and artisan crafts. Deployed on custom domain, currently sunsetted and preserved as an entrepreneurial case study.',
+    img: '/gallery/fruvalley-preview.png',
+    chip: 'REACT + AGRITECH // ARCHIVED',
+    liveUrl: 'https://fruvalleyharvests.netlify.app/',
+    specs: [
+      { label: 'Platform Architecture', val: 'React SPA + Dynamic Storefront Engine' },
+      { label: 'Target Market', val: 'Kashmir Agritech, Orchards & Artisans' },
+      { label: 'Domains Deployed', val: 'fruvalleykashmir.in & fruvalleyharvests.netlify.app' },
+      { label: 'Venture Status', val: 'Sunsetted / Preserved as Case Study' },
+      { label: 'Founder & Architect', val: 'Uzair Farooq Naikoo' }
+    ]
+  },
+  {
     id: 'gemini-live-engine',
     category: 'software',
     title: 'GEMINI LIVE 24kHz DUPLEX',

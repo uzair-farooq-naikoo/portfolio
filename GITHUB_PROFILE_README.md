@@ -54,6 +54,12 @@ I engineer systems from bare silicon and microcontroller firmware up to distribu
 * **Features:** Real-time on-device facial distance calculation alerting users when viewing closer than 30cm, 20-20-20 rule enforcement, background battery optimization.
 * **Stack:** `Kotlin` · `Python` · `OpenCV / MediaPipe` · `Computer Vision`
 
+### 📦 [FruValley Kashmir — Agritech Marketplace & Storefront](https://fruvalleyharvests.netlify.app/)
+> *Direct-to-consumer digital marketplace connecting Kashmiri orchard harvests directly to buyers across India (Archived Founder Case Study).*
+* **Scope & Mission:** Conceived and engineered to eliminate supply-chain middlemen for saffron, fresh apples, walnuts, almonds, and Kashmiri artisan crafts via a unified digital storefront.
+* **Status:** Sunsetted venture preserved as a live archive at [fruvalleyharvests.netlify.app](https://fruvalleyharvests.netlify.app/) and [fruvalleykashmir.in](https://www.fruvalleykashmir.in/) — documenting cold-start marketplace dynamics, logistics challenges, and end-to-end founder execution.
+* **Stack:** `React SPA` · `E-Commerce Storefront` · `Dynamic Catalog` · `Netlify Edge` · `Agritech Logistics`
+
 ---
 
 ## 🛠️ Technical Arsenal

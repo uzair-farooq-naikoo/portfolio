@@ -192,6 +192,23 @@ const FLAGSHIP_PROJECT_DETAILS = {
       { label: 'Initiative & Venue', val: 'Bharti Airtel Foundation QSP · AGS Wuzur' },
       { label: 'Lead Developer', val: 'Uzair Farooq Naikoo (naikoouzair2@gmail.com)' }
     ]
+  },
+  'fruvalley-kashmir': {
+    title: 'FruValley Kashmir — Agritech Marketplace & Storefront',
+    tag: 'VENTURE // ARCHIVED E-COMMERCE',
+    desc: 'An agricultural digital marketplace and e-commerce platform founded and engineered by Uzair Farooq Naikoo. Designed to eliminate supply-chain middlemen for Kashmiri orchard growers and rural artisans by connecting saffron, fresh apples, walnuts, almonds, and handcrafted wares directly to buyers across India. Launched across production domains (fruvalleykashmir.in and fruvalleyharvests.netlify.app); currently sunsetted and preserved as an authentic entrepreneurial case study in cold-start marketplace scaling.',
+    img: '/gallery/fruvalley-preview.png',
+    liveUrl: 'https://fruvalleyharvests.netlify.app/',
+    specs: [
+      { label: 'Role & Scope', val: 'Founder, Lead Architect & Full-Stack Developer' },
+      { label: 'Platform Core', val: 'React Single Page App + Dynamic Catalog Engine' },
+      { label: 'Production Domains', val: 'fruvalleykashmir.in & fruvalleyharvests.netlify.app' },
+      { label: 'Market Domain', val: 'Kashmir Agritech & Direct-to-Consumer Produce' },
+      { label: 'Ecosystem Features', val: 'Digital Storefront, Artisan Directory, Classifieds' },
+      { label: 'Venture Lifecycle', val: 'Engineered, Deployed & Sunsetted (Archived Case Study)' },
+      { label: 'Key Learning', val: 'Cold-Start Marketplace Dynamics & Regional Scaling' },
+      { label: 'Founder & Architect', val: 'Uzair Farooq Naikoo (naikoouzair2@gmail.com)' }
+    ]
   }
 };
 

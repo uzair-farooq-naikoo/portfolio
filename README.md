@@ -20,7 +20,9 @@
 
 This platform is a zero-latency, highly aesthetic web engineering showcase combining:
 * 🤖 **O.M.N.I 1.0 Autonomous Robot Showcase**: Integrated media player with hardware sound wave visualizer, sub-0.69s multimodal LLM voice reasoning pipeline, ultrasonic echolocation, and dual-deck chassis schematics.
+* ⚡ **QuickConvert Utility Suite**: 100% private in-browser file conversion engine (WASM, Canvas 2D, Web Audio).
 * 🏠 **Home Automated IoT System**: Smart energy consumption regulation, opto-isolated high-wattage relay switching, and dynamic thermal overload cutoffs (<10ms).
+* 📦 **FruValley Kashmir**: Direct-to-consumer agritech digital marketplace & regional e-commerce storefront (Archived Founder Case Study).
 * 🛡️ **OcuSafe & NovaChat**: On-device computer vision posture alerting and real-time AI collaboration tools.
 * 🦾 **3D Scannable Canvas**: 198-frame high-resolution 4K robot scrub animation interpolated smoothly with interactive HUD controls.
 * 🛰️ **KIRA-01 Intelligent Assistant**: Real-time companion with speech synthesis, articulated 3D gestures, and live system telemetry logs.
