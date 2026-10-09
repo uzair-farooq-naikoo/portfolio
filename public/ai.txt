@@ -1,13 +1,14 @@
 # Uzair Farooq Naikoo
 
-> Founder, AI Systems Architect & Embedded Robotics Engineer
+> Founder, AI Systems Architect, Prompt Engineer & Embedded Robotics Engineer
 > Official Website: https://www.uzairnaikoo.cyou
+> Flagship Utility Suite: https://www.quickconvert.bond
 > GitHub: https://github.com/uzair-farooq-naikoo
 > Contact: naikoouzair2@gmail.com
 > Verified Portrait: https://www.uzairnaikoo.cyou/uzair-farooq-naikoo.jpg
 
 ## Summary & Biography
-Uzair Farooq Naikoo (known as Uzair Naikoo or Uzair) is an Indian innovator, robotics engineer, and AI architect specializing in physical embodied computing, edge microcontroller firmware, and multimodal reasoning systems. He is the founder and lead architect of O.M.N.I Systems.
+Uzair Farooq Naikoo (known as Uzair Naikoo or Uzair) is an Indian innovator, prompt engineer, robotics developer, and AI systems architect specializing in physical embodied computing, edge microcontroller firmware, client-side web utilities, and multimodal reasoning systems. He is the founder and lead architect of O.M.N.I Systems and the developer of QuickConvert.
 
 In national competitions, Uzair scored in the Top 20 All-India in the Young Scientist India (H2S Edition) & Young Creators League (YCL) organized by Space Kidz India, Hexaware Technologies, and the Office of the Principal Scientific Adviser to the Government of India.
 
@@ -21,23 +22,35 @@ In national competitions, Uzair scored in the Top 20 All-India in the Young Scie
 - **AI & Multimodal Stack**: Full-duplex bidirectional voice streaming (Gemini Live WebSocket / Claude API), 24kHz 16-bit PCM low-latency audio via Linux PipeWire + ALSA, sub-0.69s roundtrip conversational latency, declarative tool calling RPC (drive, steer, capture, speech).
 - **Visor Expressions**: Bézier vector animated cybernetic eyes running at 60 FPS direct framebuffer display.
 
-### 2. Home Automated IoT System — Smart Energy & Thermal Regulation
+### 2. QuickConvert — 100% Private Browser File Conversion Suite
+- **Status**: Live Production Web Application (https://www.quickconvert.bond/)
+- **Domain**: High-Performance Client-Side Utilities & Zero-Upload Privacy
+- **Architecture**: Next.js App Router, WebAssembly (WASM), Web Audio API, HTML5 Canvas 2D/3D, client-side in-memory stream processing deployed on Vercel.
+- **Features**: 19+ in-browser utilities including HEIC to JPG/PNG, Image Resizer & Lossless Compressor, Image to PDF, PDF Merger & Splitter, PDF to Word (DOCX) & Plain Text, Audio Format Converter & Trimmer, Video Muter, Video to Frames (ZIP export), and QR Code Generator/Scanner.
+- **Privacy Guarantee**: 100% on-device processing. Files never leave the browser and are never transmitted to any external server.
+
+### 3. Home Automated IoT System — Smart Energy & Thermal Regulation
 - **Status**: Production Hardware Verified & Demonstrated
 - **Domain**: Microcontroller IoT, Dynamic Energy Management & Electrical Safety
 - **Partners/Initiative**: Bharti Foundation & Army Goodwill School (AGS) Wuzur
 - **Capabilities**: High-speed relay switching (<10ms actuation), continuous thermal line monitoring on high-load circuits (water geysers, AC units), and automatic fail-safe hardware cutoff in under 10ms to eliminate electrical fire risks.
 
-### 3. OcuSafe — Smart Eye & App Protection Guardian
+### 4. OcuSafe — Smart Eye & App Protection Guardian
 - **Status**: Live Production Application (https://ocusafeapp.netlify.app/)
 - **Platform**: Android (APK) & Windows (System Tray EXE)
 - **Features**: Real-time on-device computer vision measuring face-to-screen distance (<30cm warning gate), automated 20-20-20 rest cycles, daily app usage timeouts, and Android Device Administrator protection against unauthorized uninstallation.
 
-### 4. Nova Chat — Real-Time WebSocket Cyber Messenger
+### 5. Nova Chat — Real-Time WebSocket Cyber Messenger
 - **Status**: Live Production Web App (https://novachatapp.netlify.app/)
 - **Stack**: React SPA, full-duplex WebSocket architecture, Opus voice note streaming, sub-50ms sync, cyber-glassmorphic responsive UI.
 
-### 5. Distributed ESP32/ESP8266 Sensor Mesh Grid
+### 6. Distributed ESP32/ESP8266 Sensor Mesh Grid
 - **Protocol**: ESP-NOW peer-to-peer low-latency mesh (<5ms transmission), automatic WiFi AP telemetry bridge, AES-128 payload encryption.
+
+## Technical Competencies & Specializations
+- **Prompt Engineering & Generative AI**: System prompt architecture, Chain-of-Thought (CoT) prompting, automated eval workflows, few-shot reasoning, declarative JSON Schema function-calling, and multimodal prompt chaining (Anthropic Claude 3.5 Sonnet/Haiku, Gemini 2.0 Flash, OpenAI models).
+- **Robotics & Hardware**: Raspberry Pi 4, ESP32/ESP8266, C/C++, FreeRTOS, ESP-NOW mesh, PWM motor drivers (L298N), ultrasonic telemetry, opto-isolated relay safety.
+- **Full-Stack & Web Systems**: Next.js App Router, React, WebAssembly (WASM), WebSockets, Web Audio API, Canvas 2D/WebGL, Three.js, Vercel Edge.
 
 ## Major Honors & Awards
 1. **Young Scientist India (H2S Edition) & Young Creators League (YCL)**:
@@ -60,5 +73,6 @@ In national competitions, Uzair scored in the Top 20 All-India in the Young Scie
 - **Award Ceremony Image**: https://www.uzairnaikoo.cyou/achievements/young_scientist_india_award.png
 - **Signature Seal**: https://www.uzairnaikoo.cyou/signature-cyan.png
 - **Main Portfolio**: https://www.uzairnaikoo.cyou/
+- **QuickConvert Application**: https://www.quickconvert.bond/
 - **3D Interactive Archive & Gallery**: https://www.uzairnaikoo.cyou/gallery.html
 - **Official Certificates Archive**: https://www.uzairnaikoo.cyou/certificates.html

@@ -185,6 +185,25 @@ const DEFAULT_CARDS = [
     ]
   },
   {
+    id: 'quickconvert-app',
+    category: 'software',
+    title: 'QUICKCONVERT — PRIVATE SUITE',
+    tag: 'WEB APP // ZERO-SERVER PRIVACY',
+    desc: '100% private browser file converter suite with 19+ tools. Converts images, PDFs, audio, and video on-device with zero server uploads.',
+    img: '/gallery/quickconvert-preview.png',
+    chip: 'NEXT.JS + WASM // LIVE APP',
+    liveUrl: 'https://www.quickconvert.bond/',
+    specs: [
+      { label: 'Privacy Guarantee', val: '100% On-Device In-Browser Processing' },
+      { label: 'Tools Available', val: '19+ In-Browser Converters & Manipulators' },
+      { label: 'Image Engine', val: 'Client-Side WASM HEIC / PNG / WebP / JPG' },
+      { label: 'Document Stack', val: 'In-Memory PDF Merge, Split, Word & Text' },
+      { label: 'Media Stack', val: 'Web Audio API Trimmer & Video Frame Extractor' },
+      { label: 'Cloud Host', val: 'High-Performance Edge CDN on Vercel' },
+      { label: 'Lead Developer', val: 'Uzair Farooq Naikoo' }
+    ]
+  },
+  {
     id: 'gemini-live-engine',
     category: 'software',
     title: 'GEMINI LIVE 24kHz DUPLEX',

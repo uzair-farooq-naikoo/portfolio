@@ -160,6 +160,24 @@ const FLAGSHIP_PROJECT_DETAILS = {
       { label: 'Lead Developer', val: 'Uzair Farooq Naikoo (naikoouzair2@gmail.com)' }
     ]
   },
+  'quickconvert-app': {
+    title: 'QuickConvert — 100% Private Browser File Conversion Suite',
+    tag: 'WEB APP // ZERO-SERVER PRIVACY',
+    desc: 'A full-stack client-side conversion powerhouse engineered by Uzair Farooq Naikoo. Built with Next.js App Router and WebAssembly, QuickConvert processes files entirely in client memory without ever uploading a single byte to remote servers. Offers 19+ tools spanning HEIC image conversion, lossless compression, PDF merging/splitting/extraction, audio trimming, and video frame extraction.',
+    img: '/gallery/quickconvert-preview.png',
+    liveUrl: 'https://www.quickconvert.bond/',
+    specs: [
+      { label: 'Privacy Model', val: '100% In-Browser Client-Side Processing (Zero Cloud Uploads)' },
+      { label: 'Architecture', val: 'Next.js App Router + Client Memory Streams' },
+      { label: 'Tool Suite', val: '19+ Specialized Utilities (Image, PDF, Audio, Video, Docs)' },
+      { label: 'Image Engine', val: 'WASM HEIC Decoder + Canvas 2D Lossless Compression' },
+      { label: 'PDF Engine', val: 'Client-Side PDF-Lib & PDF.js Parser / Merger' },
+      { label: 'Audio / Video', val: 'Web Audio API + HTML5 Video Canvas Frame Extraction' },
+      { label: 'Security & Speed', val: 'Instant Client Processing, Zero Server Data Leakage' },
+      { label: 'Cloud Deployment', val: 'Global Low-Latency Edge on Vercel' },
+      { label: 'Lead Architect', val: 'Uzair Farooq Naikoo (naikoouzair2@gmail.com)' }
+    ]
+  },
   'home-iot-system': {
     title: 'Home Automated IoT System — Smart Energy & Appliance Telemetry',
     tag: 'HARDWARE // IOT',

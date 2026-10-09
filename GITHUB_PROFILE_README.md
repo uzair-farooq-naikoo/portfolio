@@ -1,15 +1,16 @@
 <div align="center">
 
 # ⚡ UZAIR FAROOQ NAIKOO
-### **Founder · AI Systems Architect · Embedded Robotics Engineer**
+### **Founder · AI Systems Architect · Prompt Engineer · Embedded Robotics Engineer**
 
 [![Website](https://img.shields.io/badge/Live_Portfolio-uzairnaikoo.cyou-00F5FF?style=for-the-badge&logo=google-chrome&logoColor=000)](https://uzairnaikoo.cyou)
+[![QuickConvert](https://img.shields.io/badge/Live_App-quickconvert.bond-7928CA?style=for-the-badge&logo=vercel&logoColor=fff)](https://www.quickconvert.bond)
 [![Email](https://img.shields.io/badge/Founder_Inbox-contact@uzairnaikoo.cyou-FF0055?style=for-the-badge&logo=mail.ru&logoColor=fff)](mailto:contact@uzairnaikoo.cyou)
 [![GitHub](https://img.shields.io/badge/GitHub-@uzair--farooq--naikoo-181717?style=for-the-badge&logo=github&logoColor=fff)](https://github.com/uzair-farooq-naikoo)
 [![Location](https://img.shields.io/badge/Location-India-00FF88?style=for-the-badge&logo=googlemaps&logoColor=000)](https://uzairnaikoo.cyou)
 
 <p align="center">
-  <em>Pioneering embodied AI, real-time multimodal reasoning systems, and resilient edge embedded hardware.</em>
+  <em>Pioneering embodied AI, prompt engineering & reasoning architecture, and resilient edge embedded hardware.</em>
 </p>
 
 ---
@@ -18,17 +19,23 @@
 
 ## 🌌 Founder Profile & Mission
 
-I am an independent inventor and systems engineer bridging the gap between **Generative Multimodal Intelligence** and **Physical Embodied Robotics**. 
+I am an independent inventor and systems engineer bridging the gap between **Generative Multimodal Intelligence**, **Prompt Architecture**, and **Physical Embodied Robotics**. 
 
 I engineer systems from bare silicon and microcontroller firmware up to distributed cloud reasoning agents, computer vision pipelines, and high-performance web dashboards.
 
 - 🌐 **Flagship Platform:** [uzairnaikoo.cyou](https://uzairnaikoo.cyou)
+- ⚡ **Live Utility Suite:** [quickconvert.bond](https://www.quickconvert.bond)
 - 🤖 **Core Venture:** **O.M.N.I Systems** (Autonomous Multimodal Companion & Industrial Telemetry Robotics)
 - 📬 **Direct Inquiries:** `contact@uzairnaikoo.cyou` (or `naikoouzair2@gmail.com`)
 
 ---
 
 ## ⚡ Flagship Innovations
+
+### ⚡ [QuickConvert — 100% Private Browser File Conversion Suite](https://www.quickconvert.bond/)
+> *Zero-upload client-side conversion suite processing images, PDFs, audio, video, and documents directly in browser memory.*
+* **Features:** 19+ in-browser tools including HEIC to JPG/PNG, Image Resizer & Lossless Compressor, PDF Merger & Splitter, PDF to Word/Text, Audio Format Converter & Trimmer, and Video to Frames with zero server uploads.
+* **Stack:** `Next.js App Router` · `WebAssembly (WASM)` · `Canvas 2D` · `Web Audio API` · `Client-Side In-Memory Streams` · `Vercel Edge`
 
 ### 🤖 [O.M.N.I 1.0 — Autonomous Multimodal AI Robot](https://uzairnaikoo.cyou/#omni-showcase)
 > *Sub-0.69s latency live multimodal voice reasoning, autonomous obstacle navigation, and dynamic cybernetic visor.*
@@ -55,9 +62,9 @@ I engineer systems from bare silicon and microcontroller firmware up to distribu
 
 | Domain | Technologies & Frameworks |
 | :--- | :--- |
-| **Artificial Intelligence & LLMs** | Anthropic Claude API, Real-Time Audio WebSockets, PyTorch, OpenCV, MediaPipe, Prompt Engineering |
+| **Artificial Intelligence & LLMs** | Prompt Engineering (System Prompts, CoT, Evals), Anthropic Claude API, Real-Time Audio WebSockets, PyTorch, OpenCV, MediaPipe |
 | **Robotics & Embedded Systems** | Raspberry Pi 4, ESP32, Arduino, MicroPython, C/C++, I2C/SPI/UART, Motor Kinematics, Sonar Echolocation |
-| **Frontend & Visualization** | Modern JavaScript (ESNext), TypeScript, Three.js 3D, Vite, Canvas 2D/3D Rendering, HTML5/CSS3 |
+| **Frontend & Visualization** | Next.js App Router, Modern JavaScript (ESNext), TypeScript, Three.js 3D, Vite, Canvas 2D/3D Rendering, HTML5/CSS3 |
 | **Cloud & DevOps** | Git, GitHub, Linux (Debian/Kali), Vercel, Cloudflare, WebSockets, REST APIs |
 
 </div>
