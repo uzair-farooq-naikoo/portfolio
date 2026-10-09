@@ -353,7 +353,7 @@ function updateCompanionContext(scrollY, totalDocHeight) {
       1: "Flagship creations: O.M.N.I 1.0, OcuSafe, and Nova Chat. Tap any project to inspect live telemetry!",
       2: "O.M.N.I 1.0 Autonomous Robot in action! Tap 'UNMUTE SOUND' on the video player to hear physical audio.",
       3: "Home Automated IoT System with real-time thermal safety and smart energy optimization.",
-      4: "Ready to build? Send a transmission to contact@uzair-farooq-naikoo.cyou or connect on GitHub @uzair-farooq-naikoo!"
+      4: "Ready to build? Send a transmission to contact@uzairnaikoo.cyou or connect on GitHub @uzair-farooq-naikoo!"
     };
     buddySpeechText.textContent = messages[phase];
     buddySpeechBubble?.classList.remove('minimized');
@@ -433,7 +433,7 @@ function setup3DBuddy() {
         const msgs = [
           "O.M.N.I Core online! Ready to build amazing hardware & AI with you!",
           "Telemetry active! Uzair's circuits are firing on all cylinders!",
-          "Direct transmission open! contact@uzair-farooq-naikoo.cyou is ready for you!"
+          "Direct transmission open! contact@uzairnaikoo.cyou is ready for you!"
         ];
         buddySpeechText.textContent = msgs[Math.floor(Math.random() * msgs.length)];
         buddySpeechBubble?.classList.remove('minimized');
@@ -569,7 +569,7 @@ function setupModals() {
 function setupCopyEmail() {
   function handleCopy(btn) {
     if (!btn) return;
-    navigator.clipboard.writeText('contact@uzair-farooq-naikoo.cyou').then(() => {
+    navigator.clipboard.writeText('contact@uzairnaikoo.cyou').then(() => {
       const textSpan = btn.querySelector('.copy-text') || btn.querySelector('span') || btn;
       const originalText = textSpan.textContent;
       textSpan.textContent = 'COPIED TO CLIPBOARD ✓';

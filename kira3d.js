@@ -46,7 +46,8 @@ export class CyberBuddy3D {
     this.spinAngle = 0;
     this.isSpinning = false;
     this.isPointing = false;
-    this.clock = new THREE.Clock();
+    this.startTime = performance.now();
+    this.lastTime = performance.now();
 
     this.init();
   }
@@ -295,8 +296,10 @@ export class CyberBuddy3D {
   animate() {
     requestAnimationFrame(this.animate.bind(this));
 
-    const delta = this.clock.getDelta();
-    const time = this.clock.getElapsedTime();
+    const now = performance.now();
+    const delta = Math.min((now - this.lastTime) / 1000, 0.1);
+    this.lastTime = now;
+    const time = (now - this.startTime) / 1000;
 
     // 1. Smoothly interpolate mouse tracking (spring physics)
     this.currentMouse.x += (this.targetMouse.x - this.currentMouse.x) * 0.08;
