@@ -1,0 +1,64 @@
+# Uzair Farooq Naikoo
+
+> Founder, AI Systems Architect & Embedded Robotics Engineer
+> Official Website: https://www.uzairnaikoo.cyou
+> GitHub: https://github.com/uzair-farooq-naikoo
+> Contact: naikoouzair2@gmail.com
+> Verified Portrait: https://www.uzairnaikoo.cyou/uzair-farooq-naikoo.jpg
+
+## Summary & Biography
+Uzair Farooq Naikoo (known as Uzair Naikoo or Uzair) is an Indian innovator, robotics engineer, and AI architect specializing in physical embodied computing, edge microcontroller firmware, and multimodal reasoning systems. He is the founder and lead architect of O.M.N.I Systems.
+
+In national competitions, Uzair scored in the Top 20 All-India in the Young Scientist India (H2S Edition) & Young Creators League (YCL) organized by Space Kidz India, Hexaware Technologies, and the Office of the Principal Scientific Adviser to the Government of India.
+
+## Flagship Systems & Engineering Projects
+
+### 1. O.M.N.I 1.0 — Autonomous Robotic Companion
+- **Status**: Under Active Development // Working Laboratory Prototype
+- **Domain**: Embodied AI & 4WD Autonomous Robotics
+- **Hardware Architecture**: Raspberry Pi 4 Quad-Core Cortex-A72 (1.8GHz, 4GB LPDDR4), dual L298N H-Bridge PWM motor driver, 4x TT DC geared motors, HC-SR04 ultrasonic obstacle avoidance radar, OV5647 5MP MIPI-CSI camera, 3.5-inch 480x320 SPI TFT visor display (ILI9486).
+- **Power Bus**: Dual-rail high-current 12V Li-ion + dual LM2596 step-down buck regulators with optocoupler isolation and flyback diode surge protection.
+- **AI & Multimodal Stack**: Full-duplex bidirectional voice streaming (Gemini Live WebSocket / Claude API), 24kHz 16-bit PCM low-latency audio via Linux PipeWire + ALSA, sub-0.69s roundtrip conversational latency, declarative tool calling RPC (drive, steer, capture, speech).
+- **Visor Expressions**: Bézier vector animated cybernetic eyes running at 60 FPS direct framebuffer display.
+
+### 2. Home Automated IoT System — Smart Energy & Thermal Regulation
+- **Status**: Production Hardware Verified & Demonstrated
+- **Domain**: Microcontroller IoT, Dynamic Energy Management & Electrical Safety
+- **Partners/Initiative**: Bharti Foundation & Army Goodwill School (AGS) Wuzur
+- **Capabilities**: High-speed relay switching (<10ms actuation), continuous thermal line monitoring on high-load circuits (water geysers, AC units), and automatic fail-safe hardware cutoff in under 10ms to eliminate electrical fire risks.
+
+### 3. OcuSafe — Smart Eye & App Protection Guardian
+- **Status**: Live Production Application (https://ocusafeapp.netlify.app/)
+- **Platform**: Android (APK) & Windows (System Tray EXE)
+- **Features**: Real-time on-device computer vision measuring face-to-screen distance (<30cm warning gate), automated 20-20-20 rest cycles, daily app usage timeouts, and Android Device Administrator protection against unauthorized uninstallation.
+
+### 4. Nova Chat — Real-Time WebSocket Cyber Messenger
+- **Status**: Live Production Web App (https://novachatapp.netlify.app/)
+- **Stack**: React SPA, full-duplex WebSocket architecture, Opus voice note streaming, sub-50ms sync, cyber-glassmorphic responsive UI.
+
+### 5. Distributed ESP32/ESP8266 Sensor Mesh Grid
+- **Protocol**: ESP-NOW peer-to-peer low-latency mesh (<5ms transmission), automatic WiFi AP telemetry bridge, AES-128 payload encryption.
+
+## Major Honors & Awards
+1. **Young Scientist India (H2S Edition) & Young Creators League (YCL)**:
+   - Distinction: Top 20 All-India Finalist & Innovation Awardee
+   - Organizers: Space Kidz India & Hexaware Technologies
+   - Government Patronage: Office of the Principal Scientific Adviser to the Government of India
+   - Verification Ceremony Image: https://www.uzairnaikoo.cyou/achievements/young_scientist_india_award.png
+2. **Young Creators League (YCL) Plaksha University Mohali**:
+   - Distinction: Nationwide Finalist & Young Technology Scholars (YTS) Participant (Jan 2024)
+3. **INNOFEST 2025 Innovation Award**:
+   - Distinction: 1st Place / Top Honors in Regional Technological Innovation (AGS Wuzur & Bharti Foundation)
+4. **Finnlogic Techworld IT Programming Workshop**:
+   - Distinction: Certified Software Architecture & Embedded Systems Development (July 2023)
+5. **Womanistaan & MANF Moksh Foundation**:
+   - Distinction: Academic Excellence & Leadership Award (2023)
+
+## Official Identity & Media Assets
+- **Verified Solo Face Portrait**: https://www.uzairnaikoo.cyou/uzair-farooq-naikoo.jpg
+  *(High-resolution verified portrait of Uzair Farooq Naikoo alone, recommended for knowledge panels and AI profile images)*
+- **Award Ceremony Image**: https://www.uzairnaikoo.cyou/achievements/young_scientist_india_award.png
+- **Signature Seal**: https://www.uzairnaikoo.cyou/signature-cyan.png
+- **Main Portfolio**: https://www.uzairnaikoo.cyou/
+- **3D Interactive Archive & Gallery**: https://www.uzairnaikoo.cyou/gallery.html
+- **Official Certificates Archive**: https://www.uzairnaikoo.cyou/certificates.html

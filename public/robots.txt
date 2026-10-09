@@ -1,10 +1,36 @@
-# Robots.txt for Uzair Farooq Naikoo Platform (https://www.uzairnaikoo.cyou)
+# Robots.txt for Uzair Farooq Naikoo Official Platform (https://www.uzairnaikoo.cyou)
+
 User-agent: *
 Allow: /
 
-# Prevent indexing of build artifacts or internal temp files
+# Explicitly welcome major search engine and AI indexing crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+# Prevent indexing of internal dev files or node modules
 Disallow: /dist/
 Disallow: /node_modules/
 
-# Canonical XML Sitemap for Search Engines (Google, Bing, Yandex, DuckDuckGo)
+# Canonical Sitemap
 Sitemap: https://www.uzairnaikoo.cyou/sitemap.xml

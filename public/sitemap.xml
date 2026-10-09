@@ -3,9 +3,19 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://www.uzairnaikoo.cyou/</loc>
-    <lastmod>2026-10-08</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>daily</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://www.uzairnaikoo.cyou/uzair-farooq-naikoo.jpg</image:loc>
+      <image:title>Uzair Farooq Naikoo — Founder, AI Systems Architect &amp; Embedded Robotics Engineer</image:title>
+      <image:caption>Official verified solo portrait of Uzair Farooq Naikoo</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.uzairnaikoo.cyou/achievements/young_scientist_india_award.png</image:loc>
+      <image:title>Uzair Farooq Naikoo receiving Young Scientist India &amp; Young Creators League National Top 20 Award</image:title>
+      <image:caption>Space Kidz India, Hexaware Technologies, and Office of the PSA to Government of India</image:caption>
+    </image:image>
     <image:image>
       <image:loc>https://www.uzairnaikoo.cyou/omni/omni_front_display.jpg</image:loc>
       <image:title>O.M.N.I 1.0 Autonomous AI Robot Front Visor by Uzair Farooq Naikoo</image:title>
@@ -21,14 +31,22 @@
   </url>
   <url>
     <loc>https://www.uzairnaikoo.cyou/gallery.html</loc>
-    <lastmod>2026-10-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.uzairnaikoo.cyou/gallery/uzair-portrait-solo.jpg</image:loc>
+      <image:title>Uzair Farooq Naikoo Solo Portrait in Nature</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.uzairnaikoo.cyou/achievements/young_scientist_india_award.png</image:loc>
+      <image:title>Young Scientist India and Young Creators League Trophy Presentation</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://www.uzairnaikoo.cyou/certificates.html</loc>
-    <lastmod>2026-10-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
   </url>
 </urlset>

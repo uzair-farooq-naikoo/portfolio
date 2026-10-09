@@ -56,10 +56,11 @@ const inspectSpecsList = document.getElementById('inspect-specs-list');
 const FLAGSHIP_PROJECT_DETAILS = {
   'omni-chassis-4wd': {
     title: 'O.M.N.I 1.0 — Autonomous Robotic Companion',
-    tag: 'ROBOTICS // 4WD',
-    desc: '4WD differential drive robot platform powered by dual L298N H-Bridge PWM and HC-SR04 ultrasonic radar obstacle avoidance, combined with real-time Gemini Live full-duplex voice streaming.',
+    tag: 'ROBOTICS // UNDER ACTIVE DEVELOPMENT',
+    desc: '4WD differential drive robot platform powered by dual L298N H-Bridge PWM and HC-SR04 ultrasonic radar obstacle avoidance, combined with real-time Gemini Live full-duplex voice streaming. Currently under active prototype testing.',
     img: '/gallery/omni-pi-face.png',
     specs: [
+      { label: 'System Status', val: 'UNDER ACTIVE DEVELOPMENT // Working Prototype' },
       { label: 'Voice Streaming', val: 'Gemini Live WebSocket (24kHz PCM)' },
       { label: 'Audio Latency', val: '0.69 seconds average roundtrip' },
       { label: 'Visor Display', val: '3.5" 480x320 SPI0 RGB TFT (ILI9486)' },
@@ -68,6 +69,21 @@ const FLAGSHIP_PROJECT_DETAILS = {
       { label: 'Vision Pipeline', val: 'OV5647 5MP MIPI-CSI Camera' },
       { label: 'Power Bus', val: '12V 3S Li-ion + Dual LM2596 Regulators' },
       { label: 'Lead Architect', val: 'Uzair Farooq Naikoo' }
+    ]
+  },
+  'young-scientist-india-award': {
+    title: 'National Top 20 Finalist — Young Scientist India & Young Creators League (YCL)',
+    tag: 'NATIONAL AWARD // TOP 20',
+    desc: 'National Finalist and Innovation Awardee in Young Scientist India (H2S Edition) & Young Creators League, organized by Space Kidz India and Hexaware Technologies in partnership with the Office of the Principal Scientific Adviser to the Government of India.',
+    img: '/achievements/young_scientist_india_award.png',
+    specs: [
+      { label: 'Competition', val: 'Young Scientist India (H2S Edition) / Young Creators League' },
+      { label: 'National Rank', val: 'Top 20 Innovators Nationwide' },
+      { label: 'Organizers', val: 'Space Kidz India & Hexaware Technologies' },
+      { label: 'Patronage', val: 'Office of the Principal Scientific Adviser to Govt. of India' },
+      { label: 'Award Recipient', val: 'Uzair Farooq Naikoo' },
+      { label: 'Field', val: 'Embodied AI, Autonomous Robotics & Edge Microcontrollers' },
+      { label: 'Distinction', val: 'National Trophy & Merit Certificate' }
     ]
   },
   'esp-sensor-grid': {
@@ -1129,7 +1145,68 @@ function setupProjectFilters() {
 }
 
 // ============================================================================
-// 12. INITIALIZATION
+// 12. RESPONSIVE MOBILE MENU DRAWER
+// ============================================================================
+function setupMobileMenu() {
+  const toggleBtn = document.getElementById('hud-mobile-toggle');
+  const drawer = document.getElementById('hud-mobile-drawer');
+  const closeBtn = document.getElementById('mobile-drawer-close');
+  if (!toggleBtn || !drawer) return;
+
+  const openDrawer = () => {
+    drawer.classList.add('active');
+    toggleBtn.classList.add('active');
+    toggleBtn.setAttribute('aria-expanded', 'true');
+    drawer.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+  };
+
+  const closeDrawer = () => {
+    drawer.classList.remove('active');
+    toggleBtn.classList.remove('active');
+    toggleBtn.setAttribute('aria-expanded', 'false');
+    drawer.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+  };
+
+  toggleBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    if (drawer.classList.contains('active')) {
+      closeDrawer();
+    } else {
+      openDrawer();
+    }
+  });
+
+  if (closeBtn) {
+    closeBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      closeDrawer();
+    });
+  }
+
+  drawer.addEventListener('click', (e) => {
+    if (e.target === drawer) {
+      closeDrawer();
+    }
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && drawer.classList.contains('active')) {
+      closeDrawer();
+    }
+  });
+
+  const links = drawer.querySelectorAll('.mobile-nav-link');
+  links.forEach(link => {
+    link.addEventListener('click', () => {
+      closeDrawer();
+    });
+  });
+}
+
+// ============================================================================
+// 13. INITIALIZATION
 // ============================================================================
 window.addEventListener('scroll', onScroll, { passive: true });
 window.addEventListener('resize', resizeCanvas, { passive: true });
@@ -1144,6 +1221,7 @@ document.addEventListener('DOMContentLoaded', () => {
   setupProjectFilters();
   setupCardHolographicEffects();
   setupModals();
+  setupMobileMenu();
   setupCopyEmail();
   setupBackToTop();
   requestAnimationFrame(renderLoop);

@@ -354,8 +354,42 @@ const DEFAULT_CARDS = [
       { label: 'Honoree', val: 'Uzair Farooq Naikoo' }
     ]
   },
+  {
+    id: 'young-scientist-india-award',
+    category: 'certificates',
+    title: 'YOUNG SCIENTIST INDIA & YCL AWARD',
+    tag: 'NATIONAL AWARD // TOP 20',
+    desc: 'National Finalist and Innovation Awardee in Young Scientist India (H2S Edition) & Young Creators League, organized by Space Kidz India, Hexaware Technologies, and the Office of the Principal Scientific Adviser to the Government of India.',
+    img: '/achievements/young_scientist_india_award.png',
+    chip: 'SPACE KIDZ // TOP 20',
+    specs: [
+      { label: 'Competition', val: 'Young Scientist India (H2S Edition) / Young Creators League' },
+      { label: 'Organizers', val: 'Space Kidz India & Hexaware Technologies' },
+      { label: 'Government Patronage', val: 'Office of the Principal Scientific Adviser to Govt. of India' },
+      { label: 'Distinction', val: 'Top 20 All-India Finalist & Innovation Awardee' },
+      { label: 'Awardee', val: 'Uzair Farooq Naikoo' },
+      { label: 'Focus Area', val: 'Embodied AI, Robotics & Physical Computing' }
+    ]
+  },
 
   // --- MY GALLERY & BUILDS ---
+  {
+    id: 'uzair-portrait-solo',
+    category: 'gallery',
+    title: 'UZAIR FAROOQ NAIKOO (FOUNDER)',
+    tag: 'FOUNDER // PORTRAIT',
+    desc: 'Official solo portrait of Uzair Farooq Naikoo — Founder of O.M.N.I Systems, AI Systems Architect, and Embedded Robotics Engineer.',
+    img: '/gallery/uzair-portrait-solo.jpg',
+    chip: 'OFFICIAL PORTRAIT',
+    specs: [
+      { label: 'Full Name', val: 'Uzair Farooq Naikoo' },
+      { label: 'Role', val: 'Founder & AI Systems Architect' },
+      { label: 'Innovations', val: 'O.M.N.I 1.0 Robot, Home IoT Automation' },
+      { label: 'Awards', val: 'Young Scientist India Top 20, YCL Plaksha' },
+      { label: 'Website', val: 'https://www.uzairnaikoo.cyou' },
+      { label: 'Direct Email', val: 'naikoouzair2@gmail.com' }
+    ]
+  },
   {
     id: 'omni-speech-mouth',
     category: 'gallery',
@@ -543,6 +577,64 @@ let buddy3d = null;
 // ============================================================================
 // 4. CYLINDER RENDERING & MATHEMATICS
 // ============================================================================
+function setupMobileMenu() {
+  const toggleBtn = document.getElementById('hud-mobile-toggle');
+  const drawer = document.getElementById('hud-mobile-drawer');
+  const closeBtn = document.getElementById('mobile-drawer-close');
+  if (!toggleBtn || !drawer) return;
+
+  const openDrawer = () => {
+    drawer.classList.add('active');
+    toggleBtn.classList.add('active');
+    toggleBtn.setAttribute('aria-expanded', 'true');
+    drawer.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+  };
+
+  const closeDrawer = () => {
+    drawer.classList.remove('active');
+    toggleBtn.classList.remove('active');
+    toggleBtn.setAttribute('aria-expanded', 'false');
+    drawer.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+  };
+
+  toggleBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    if (drawer.classList.contains('active')) {
+      closeDrawer();
+    } else {
+      openDrawer();
+    }
+  });
+
+  if (closeBtn) {
+    closeBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      closeDrawer();
+    });
+  }
+
+  drawer.addEventListener('click', (e) => {
+    if (e.target === drawer) {
+      closeDrawer();
+    }
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && drawer.classList.contains('active')) {
+      closeDrawer();
+    }
+  });
+
+  const links = drawer.querySelectorAll('.mobile-nav-link');
+  links.forEach(link => {
+    link.addEventListener('click', () => {
+      closeDrawer();
+    });
+  });
+}
+
 function initHolographicCylinder() {
   filterGalleryCategory('all');
   setupCylinderInteractions();
@@ -551,6 +643,7 @@ function initHolographicCylinder() {
   setupCardInspection();
   setupCopyEmail();
   setup3DBuddy();
+  setupMobileMenu();
 }
 
 function filterGalleryCategory(cat) {

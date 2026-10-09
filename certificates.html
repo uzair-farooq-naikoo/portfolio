@@ -14,7 +14,10 @@
   <meta property="og:url" content="https://www.uzairnaikoo.cyou/certificates.html" />
   <meta property="og:title" content="Official Accreditations &amp; Awards — Uzair Farooq Naikoo" />
   <meta property="og:description" content="Verified national awards and official certifications awarded to Uzair Farooq Naikoo across Young Creators League (Plaksha University), Young Scientist India, and INNOFEST." />
-  <meta property="og:image" content="https://www.uzairnaikoo.cyou/omni/omni_front_display.jpg" />
+  <meta property="og:image" content="https://www.uzairnaikoo.cyou/uzair-farooq-naikoo.jpg" />
+  <meta property="og:image:alt" content="Official Portrait of Uzair Farooq Naikoo" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://www.uzairnaikoo.cyou/uzair-farooq-naikoo.jpg" />
 
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -43,15 +46,16 @@
     <!-- ================= TOP BAR ================= -->
     <header class="hud-top-bar">
       <div class="hud-brand">
-        <a href="/" class="brand-link" title="Return to Main Core">
-          <span class="brand-name">UZAIR</span>
-          <span class="brand-sub">FAROOQ NAIKOO</span>
-          <span class="brand-badge">®</span>
+        <a href="/" class="brand-link" title="Return to Core">
+          <img src="/signature-cyan.png" alt="Uzair Official Signature Seal" class="nav-sig-icon" />
+          <div class="brand-text-group">
+            <span class="brand-name">UZAIR</span>
+            <span class="brand-sub">FAROOQ NAIKOO</span>
+            <span class="brand-badge">®</span>
+          </div>
         </a>
         <span class="brand-tagline">// VERIFIED CREDENTIALS ARCHIVE</span>
       </div>
-
-      <div class="top-nav-divider" aria-hidden="true">+</div>
 
       <!-- Navigation -->
       <nav class="hud-nav" aria-label="Archive Navigation">
@@ -59,19 +63,12 @@
           <span class="btn-arrow">←</span>
           <span>RETURN TO CORE</span>
         </a>
-        <span class="nav-dot">·</span>
         <a href="/gallery.html" class="nav-btn nav-btn-glow" title="View 3D Photo Gallery">
           <span>📷 3D PHOTO GALLERY</span>
         </a>
-        <span class="nav-dot">·</span>
         <a href="/#flagship-projects" class="nav-btn">⚡ PROJECTS</a>
-        <span class="nav-dot">·</span>
-        <button type="button" class="nav-btn" data-modal="hardware">HARDWARE LAB</button>
-        <span class="nav-dot">·</span>
         <button type="button" class="nav-btn" data-modal="contact">CONTACT</button>
       </nav>
-
-      <div class="top-nav-divider" aria-hidden="true">+</div>
 
       <div class="hud-top-action">
         <a href="/#contact" class="nav-btn nav-contact-btn" title="Initiate Contact">
@@ -79,8 +76,49 @@
           <span>GET IN TOUCH</span>
           <span class="btn-arrow">↗</span>
         </a>
+        <button type="button" class="hud-mobile-toggle" id="hud-mobile-toggle" aria-label="Toggle Navigation Menu" aria-expanded="false">
+          <span class="toggle-bar"></span>
+          <span class="toggle-bar"></span>
+          <span class="toggle-bar"></span>
+        </button>
       </div>
     </header>
+
+    <!-- Mobile Responsive HUD Drawer -->
+    <div class="hud-mobile-drawer" id="hud-mobile-drawer" aria-hidden="true">
+      <div class="mobile-drawer-inner glass-cut">
+        <div class="mobile-drawer-header">
+          <span class="mobile-drawer-title">// UZAIR // NAVIGATION MATRIX</span>
+          <button type="button" class="mobile-drawer-close" id="mobile-drawer-close" aria-label="Close Menu">✕</button>
+        </div>
+        <nav class="mobile-nav-links">
+          <a href="/" class="mobile-nav-link">
+            <span class="m-icon">←</span>
+            <span>RETURN TO CORE WEBSITE</span>
+          </a>
+          <a href="/gallery.html" class="mobile-nav-link">
+            <span class="m-icon">📷</span>
+            <span>3D PHOTO ARCHIVE</span>
+          </a>
+          <a href="/#flagship-projects" class="mobile-nav-link">
+            <span class="m-icon">⚡</span>
+            <span>FLAGSHIP PROJECTS</span>
+          </a>
+          <a href="/#omni-showcase" class="mobile-nav-link">
+            <span class="m-icon">🤖</span>
+            <span>O.M.N.I ROBOT (IN DEV)</span>
+          </a>
+          <a href="https://github.com/uzair-farooq-naikoo" target="_blank" rel="noopener noreferrer" class="mobile-nav-link">
+            <span class="m-icon">🐙</span>
+            <span>GITHUB PROFILE</span>
+          </a>
+          <button type="button" class="mobile-nav-link mobile-contact-btn" data-modal="contact">
+            <span class="m-icon">✉</span>
+            <span>DIRECT INQUIRY // CONTACT</span>
+          </button>
+        </nav>
+      </div>
+    </div>
 
     <!-- ================= MAIN CERTIFICATES ARCHIVE ================= -->
     <main class="standalone-cert-main">

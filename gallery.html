@@ -14,7 +14,10 @@
   <meta property="og:url" content="https://www.uzairnaikoo.cyou/gallery.html" />
   <meta property="og:title" content="3D Holographic Archive — Uzair Farooq Naikoo" />
   <meta property="og:description" content="Interactive 3D Holographic Cylinder Archive of Uzair Farooq Naikoo's Robotics, Embedded IoT, and Multimodal AI creations." />
-  <meta property="og:image" content="https://www.uzairnaikoo.cyou/omni/omni_front_display.jpg" />
+  <meta property="og:image" content="https://www.uzairnaikoo.cyou/uzair-farooq-naikoo.jpg" />
+  <meta property="og:image:alt" content="Official Portrait of Uzair Farooq Naikoo" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://www.uzairnaikoo.cyou/uzair-farooq-naikoo.jpg" />
 
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -44,14 +47,15 @@
     <header class="hud-top-bar">
       <div class="hud-brand">
         <a href="/" class="brand-link" title="Return to Main Core">
-          <span class="brand-name">UZAIR</span>
-          <span class="brand-sub">FAROOQ NAIKOO</span>
-          <span class="brand-badge">®</span>
+          <img src="/signature-cyan.png" alt="Uzair Official Signature Seal" class="nav-sig-icon" />
+          <div class="brand-text-group">
+            <span class="brand-name">UZAIR</span>
+            <span class="brand-sub">FAROOQ NAIKOO</span>
+            <span class="brand-badge">®</span>
+          </div>
         </a>
         <span class="brand-tagline">// 3D HOLOGRAPHIC ARCHIVE</span>
       </div>
-
-      <div class="top-nav-divider" aria-hidden="true">+</div>
 
       <!-- Navigation to return home -->
       <nav class="hud-nav" aria-label="Archive Navigation">
@@ -59,17 +63,11 @@
           <span class="btn-arrow">←</span>
           <span>RETURN TO CORE</span>
         </a>
-        <span class="nav-dot">·</span>
         <a href="/certificates.html" class="nav-btn nav-btn-glow" title="View Official Certificates Archive">
           <span>📜 CERTIFICATES (8)</span>
         </a>
-        <span class="nav-dot">·</span>
-        <button type="button" class="nav-btn" data-modal="hardware">HARDWARE LAB</button>
-        <span class="nav-dot">·</span>
         <button type="button" class="nav-btn" data-modal="contact">CONTACT</button>
       </nav>
-
-      <div class="top-nav-divider" aria-hidden="true">+</div>
 
       <div class="hud-top-action">
         <a href="/#contact" class="nav-btn nav-contact-btn" title="Initiate Contact">
@@ -77,8 +75,49 @@
           <span>GET IN TOUCH</span>
           <span class="btn-arrow">↗</span>
         </a>
+        <button type="button" class="hud-mobile-toggle" id="hud-mobile-toggle" aria-label="Toggle Navigation Menu" aria-expanded="false">
+          <span class="toggle-bar"></span>
+          <span class="toggle-bar"></span>
+          <span class="toggle-bar"></span>
+        </button>
       </div>
     </header>
+
+    <!-- Mobile Responsive HUD Drawer -->
+    <div class="hud-mobile-drawer" id="hud-mobile-drawer" aria-hidden="true">
+      <div class="mobile-drawer-inner glass-cut">
+        <div class="mobile-drawer-header">
+          <span class="mobile-drawer-title">// UZAIR // NAVIGATION MATRIX</span>
+          <button type="button" class="mobile-drawer-close" id="mobile-drawer-close" aria-label="Close Menu">✕</button>
+        </div>
+        <nav class="mobile-nav-links">
+          <a href="/" class="mobile-nav-link">
+            <span class="m-icon">←</span>
+            <span>RETURN TO CORE WEBSITE</span>
+          </a>
+          <a href="/certificates.html" class="mobile-nav-link">
+            <span class="m-icon">🏆</span>
+            <span>AWARDS &amp; CERTIFICATES (8)</span>
+          </a>
+          <a href="/#flagship-projects" class="mobile-nav-link">
+            <span class="m-icon">⚡</span>
+            <span>FLAGSHIP PROJECTS</span>
+          </a>
+          <a href="/#omni-showcase" class="mobile-nav-link">
+            <span class="m-icon">🤖</span>
+            <span>O.M.N.I ROBOT (IN DEV)</span>
+          </a>
+          <a href="https://github.com/uzair-farooq-naikoo" target="_blank" rel="noopener noreferrer" class="mobile-nav-link">
+            <span class="m-icon">🐙</span>
+            <span>GITHUB PROFILE</span>
+          </a>
+          <button type="button" class="mobile-nav-link mobile-contact-btn" data-modal="contact">
+            <span class="m-icon">✉</span>
+            <span>DIRECT INQUIRY // CONTACT</span>
+          </button>
+        </nav>
+      </div>
+    </div>
 
     <!-- ================= 3D HOLOGRAPHIC CONCAVE CYLINDER STAGE ================= -->
     <main class="standalone-gallery-main">
