@@ -66,8 +66,8 @@ I engineer systems from bare silicon and microcontroller firmware up to distribu
 
 ## 🏆 National Accolades & Milestones
 
-* 🏅 **Young Creators League (YCL) National Finalist** — Honored at Plaksha University for IoT Home Automation.
-* 🏆 **Young Scientist India (YSI 11th Edition) National Finalist** — Recognized nationwide for physical computing innovation.
+* 🏆 **Top 20 All-India Finalist & Innovation Awardee — Young Scientist India (H2S Edition) & Young Creators League (YCL)** — Space Kidz India, Hexaware Technologies, and Office of the Principal Scientific Adviser to the Government of India.
+* 🏅 **Young Creators League (YCL) National Finalist** — Honored at Plaksha University Mohali for embodied robotics & IoT engineering.
 * 🎖️ **INNOFEST 2025 Innovation Award** — Awarded by Indian Army leadership at AGS Wuzur.
 * 📺 **News 18 Kashmir National Television Feature** — Broadcast interview showcasing autonomous robotics & IoT engineering.
 
