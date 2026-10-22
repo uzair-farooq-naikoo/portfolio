@@ -567,7 +567,10 @@ function filterGalleryCategory(cat) {
   }
 
   renderCylinderCards();
-  rotateToCardIndex(0);
+  activeCardIndex = 0;
+  currentCylinderAngle = 0;
+  targetCylinderAngle = 0;
+  updateInwardCylinder3D();
 }
 
 function renderCylinderCards() {
@@ -628,16 +631,25 @@ function renderCylinderCards() {
       </div>
     `;
 
-    // Click to open inspection
-    cardEl.addEventListener('click', () => {
-      openCardInspection(card);
+    // Click to open inspection or rotate to center
+    cardEl.addEventListener('click', (e) => {
+      if (activeCardIndex !== index) {
+        e.stopPropagation();
+        rotateToCardIndex(index);
+      } else {
+        openCardInspection(card);
+      }
     });
 
     // Keyboard trigger
     cardEl.addEventListener('keydown', (e) => {
       if (e.key === 'Enter' || e.key === ' ') {
         e.preventDefault();
-        openCardInspection(card);
+        if (activeCardIndex !== index) {
+          rotateToCardIndex(index);
+        } else {
+          openCardInspection(card);
+        }
       }
     });
 
@@ -695,7 +707,32 @@ function setupCardHolographicTilt(cardEl) {
   });
 }
 
-const CARD_ANGLE_STEP = 24;
+function getCylinderConfig() {
+  const w = window.innerWidth;
+  const h = window.innerHeight;
+  if (w < 600 || h < 600) {
+    return {
+      radius: Math.min(320, Math.max(220, w * 0.48)),
+      angleStep: 32,
+      maxVisibleAngle: 65,
+      rotYFactor: 0.72
+    };
+  } else if (w < 1024) {
+    return {
+      radius: Math.min(500, Math.max(340, w * 0.46)),
+      angleStep: 28,
+      maxVisibleAngle: 68,
+      rotYFactor: 0.75
+    };
+  } else {
+    return {
+      radius: Math.min(680, Math.max(480, w * 0.44)),
+      angleStep: 24,
+      maxVisibleAngle: 72,
+      rotYFactor: 0.78
+    };
+  }
+}
 
 function updateInwardCylinder3D() {
   if (!holoTrack) return;
@@ -703,16 +740,20 @@ function updateInwardCylinder3D() {
   const total = cards.length;
   if (total === 0) return;
 
-  const radius = Math.max(780, Math.min(1150, window.innerWidth * 0.68));
+  const config = getCylinderConfig();
+  const radius = config.radius;
+  const step = config.angleStep;
+  const maxVisibleAngle = config.maxVisibleAngle;
+  const rotYFactor = config.rotYFactor;
 
   let closestIndex = 0;
   let minAngleDiff = 99999;
 
   cards.forEach((card, index) => {
-    const baseAngle = index * CARD_ANGLE_STEP;
+    const baseAngle = index * step;
     const computedAngle = baseAngle + currentCylinderAngle;
 
-    const span = total * CARD_ANGLE_STEP;
+    const span = total * step;
     let normAngle = ((computedAngle % span) + span) % span;
     if (normAngle > span / 2) {
       normAngle -= span;
@@ -725,11 +766,11 @@ function updateInwardCylinder3D() {
     }
 
     // Cull cards curving out of view
-    if (absDiff > 66) {
+    if (absDiff > maxVisibleAngle) {
       card.style.opacity = '0';
       card.style.pointerEvents = 'none';
       card.style.visibility = 'hidden';
-      card.style.transform = `translate3d(0, 0, -1800px)`;
+      card.style.transform = `translate(-50%, -50%) translate3d(0, 0, -1800px)`;
       return;
     }
 
@@ -739,21 +780,21 @@ function updateInwardCylinder3D() {
     const rad = (normAngle * Math.PI) / 180;
     const x = Math.sin(rad) * radius;
     const z = (Math.cos(rad) - 1) * radius;
-    const rotY = normAngle * 0.78;
+    const rotY = normAngle * rotYFactor;
 
     const tiltX = card.style.getPropertyValue('--tilt-x') || '0deg';
     const tiltY = card.style.getPropertyValue('--tilt-y') || '0deg';
 
-    card.style.transform = `translate3d(${x.toFixed(1)}px, 0, ${z.toFixed(1)}px) rotateY(${rotY.toFixed(1)}deg) rotateX(${tiltX}) rotateY(${tiltY})`;
+    card.style.transform = `translate(-50%, -50%) translate3d(${x.toFixed(1)}px, 0, ${z.toFixed(1)}px) rotateY(${rotY.toFixed(1)}deg) rotateX(${tiltX}) rotateY(${tiltY})`;
 
-    if (absDiff < 12) {
+    if (absDiff < step * 0.45) {
       card.classList.add('focused');
       card.style.opacity = '1';
       card.style.filter = 'drop-shadow(0 0 32px rgba(0, 240, 255, 0.55))';
       card.style.zIndex = '30';
     } else {
       card.classList.remove('focused');
-      const dimFactor = Math.max(0.35, 1 - (absDiff / 80));
+      const dimFactor = Math.max(0.25, 1 - (absDiff / (maxVisibleAngle * 1.15)));
       card.style.opacity = dimFactor.toFixed(2);
       card.style.filter = 'none';
       card.style.zIndex = `${Math.round(20 - absDiff / 4)}`;
@@ -769,50 +810,108 @@ function updateInwardCylinder3D() {
 }
 
 function rotateToCardIndex(index) {
-  targetCylinderAngle = -index * CARD_ANGLE_STEP;
+  const config = getCylinderConfig();
+  const step = config.angleStep;
+  const cards = holoTrack ? holoTrack.querySelectorAll('.holo-card') : [];
+  const total = cards.length || filteredCards.length || 1;
+
+  // Shortest path modulo total
+  const currentNearest = Math.round(-targetCylinderAngle / step);
+  let diff = (index - (currentNearest % total)) % total;
+  if (diff > total / 2) diff -= total;
+  if (diff < -total / 2) diff += total;
+
+  targetCylinderAngle = -(currentNearest + diff) * step;
+}
+
+function snapToNearestCard() {
+  const config = getCylinderConfig();
+  const step = config.angleStep;
+  targetCylinderAngle = Math.round(targetCylinderAngle / step) * step;
+}
+
+function stepCylinder(direction) {
+  const config = getCylinderConfig();
+  const step = config.angleStep;
+  const currentIndex = Math.round(-targetCylinderAngle / step);
+  const nextIndex = currentIndex + direction;
+  targetCylinderAngle = -nextIndex * step;
 }
 
 function setupCylinderInteractions() {
   if (!holoStage) return;
 
+  let isPointerDown = false;
+  let hasDragged = false;
+  let dragStartX = 0;
+  let dragStartAngle = 0;
+
   // Pointer drag to spin horizontally
   holoStage.addEventListener('pointerdown', (e) => {
-    isDragging = true;
-    startX = e.clientX;
-    startAngle = targetCylinderAngle;
+    isPointerDown = true;
+    hasDragged = false;
+    dragStartX = e.clientX;
+    dragStartAngle = targetCylinderAngle;
     holoStage.style.cursor = 'grabbing';
+    try { holoStage.setPointerCapture(e.pointerId); } catch (_) {}
   });
 
   window.addEventListener('pointermove', (e) => {
-    if (!isDragging) return;
-    const deltaX = e.clientX - startX;
-    targetCylinderAngle = startAngle + deltaX * 0.22;
-  });
-
-  window.addEventListener('pointerup', () => {
-    if (isDragging) {
-      isDragging = false;
-      holoStage.style.cursor = 'grab';
+    if (!isPointerDown) return;
+    const deltaX = e.clientX - dragStartX;
+    if (Math.abs(deltaX) > 4) {
+      hasDragged = true;
     }
+    const config = getCylinderConfig();
+    const sensitivity = config.angleStep / (window.innerWidth < 600 ? 140 : 220);
+    targetCylinderAngle = dragStartAngle + deltaX * sensitivity;
   });
 
-  // Mouse wheel rotation
+  const onPointerUp = (e) => {
+    if (isPointerDown) {
+      isPointerDown = false;
+      holoStage.style.cursor = 'grab';
+      try { holoStage.releasePointerCapture(e.pointerId); } catch (_) {}
+      if (hasDragged) {
+        snapToNearestCard();
+      }
+    }
+  };
+
+  window.addEventListener('pointerup', onPointerUp);
+  window.addEventListener('pointercancel', onPointerUp);
+
+  // Mouse wheel rotation with debounced stepping (1 scroll flick = 1 card step to center)
+  let isWheelThrottled = false;
+  let wheelTimer = null;
+
   holoStage.addEventListener('wheel', (e) => {
     e.preventDefault();
-    const delta = Math.sign(e.deltaY || e.deltaX);
-    targetCylinderAngle -= delta * CARD_ANGLE_STEP;
+    const delta = Math.abs(e.deltaY) >= Math.abs(e.deltaX) ? e.deltaY : e.deltaX;
+    if (Math.abs(delta) < 8) return;
+
+    if (!isWheelThrottled) {
+      isWheelThrottled = true;
+      const direction = delta > 0 ? 1 : -1;
+      stepCylinder(direction);
+
+      clearTimeout(wheelTimer);
+      wheelTimer = setTimeout(() => {
+        isWheelThrottled = false;
+      }, 200);
+    }
   }, { passive: false });
 
   // Arrow buttons
   if (holoPrevBtn) {
     holoPrevBtn.addEventListener('click', () => {
-      targetCylinderAngle += CARD_ANGLE_STEP;
+      stepCylinder(-1);
     });
   }
 
   if (holoNextBtn) {
     holoNextBtn.addEventListener('click', () => {
-      targetCylinderAngle -= CARD_ANGLE_STEP;
+      stepCylinder(1);
     });
   }
 
@@ -821,12 +920,20 @@ function setupCylinderInteractions() {
     if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
 
     if (e.key === 'ArrowLeft') {
-      targetCylinderAngle += CARD_ANGLE_STEP;
+      stepCylinder(-1);
     } else if (e.key === 'ArrowRight') {
-      targetCylinderAngle -= CARD_ANGLE_STEP;
+      stepCylinder(1);
     } else if (e.key === 'Escape') {
       closeAllModals();
     }
+  });
+
+  // Responsive resize handler so currently active card stays dead-center
+  window.addEventListener('resize', () => {
+    const config = getCylinderConfig();
+    targetCylinderAngle = -activeCardIndex * config.angleStep;
+    currentCylinderAngle = targetCylinderAngle;
+    updateInwardCylinder3D();
   });
 
   // Render loop for smooth cylinder inertia lerp
