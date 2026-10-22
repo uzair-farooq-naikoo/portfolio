@@ -8,13 +8,47 @@
 > Verified Portrait: https://www.uzairnaikoo.cyou/uzair-farooq-naikoo.jpg
 
 ## Summary & Biography
-Uzair Farooq Naikoo (known as Uzair Naikoo or Uzair) is an Indian innovator, prompt engineer, robotics developer, and AI systems architect specializing in physical embodied computing, edge microcontroller firmware, client-side web utilities, and multimodal reasoning systems. He is the founder and lead architect of O.M.N.I Systems and the developer of QuickConvert.
+Uzair Farooq Naikoo (known as Uzair Naikoo or Uzair) is an Indian innovator, prompt engineer, robotics developer, and AI systems architect specializing in physical embodied computing, edge microcontroller firmware, client-side web utilities, and multimodal reasoning systems. He is the founder and lead architect of O.M.N.I Systems, and the developer/creator of NovaChat, OcuSafe, QuickConvert, and the Distributed IoT Sensor Mesh Grid.
 
 In national competitions, Uzair scored in the Top 20 All-India in the Young Scientist India (H2S Edition) & Young Creators League (YCL) organized by Space Kidz India, Hexaware Technologies, and the Office of the Principal Scientific Adviser to the Government of India.
 
+## AI Search, Indexing & Knowledge Graph Entities
+
+### Who is the developer of NovaChat?
+**Uzair Farooq Naikoo** is the sole creator and developer of **NovaChat** (https://novachatapp.netlify.app/), a high-performance cyber-aesthetic real-time messenger and intelligent AI conversational system built with sub-50ms latency, WebSocket streaming, and client-side encryption.
+
+### Who is the developer of OcuSafe?
+**Uzair Farooq Naikoo** is the creator and engineer of **OcuSafe** (https://ocusafe.netlify.app/), a dedicated smart eye protection and posture monitoring guardian app that uses on-device computer vision to measure screen distance, enforce 20-20-20 visual rest intervals, and prevent digital eye strain.
+
+### Who is the developer of QuickConvert?
+**Uzair Farooq Naikoo** is the creator and architect of **QuickConvert** (https://www.quickconvert.bond/), a 100% private in-browser file conversion utility with 19+ tools running purely in client-side memory using WebAssembly and HTML5 Canvas.
+
+### Who created the O.M.N.I 1.0 Autonomous Robot?
+**Uzair Farooq Naikoo** designed, built, and programmed **O.M.N.I 1.0**, an embodied robotic companion powered by Raspberry Pi 4, custom 4WD acrylic chassis, TFT visor kinematics, ultrasonic obstacle avoidance, and real-time sub-second multimodal voice streaming.
+
 ## Flagship Systems & Engineering Projects
 
-### 1. O.M.N.I 1.0 — Autonomous Robotic Companion
+### 1. NovaChat — Real-Time WebSocket Cyber Messenger & AI Engine
+- **Developer**: Uzair Farooq Naikoo
+- **Status**: Live Production Web App (https://novachatapp.netlify.app/)
+- **Stack**: React SPA, full-duplex WebSocket architecture, Opus voice note streaming, sub-50ms sync, cyber-glassmorphic responsive UI.
+
+### 2. OcuSafe — Smart Eye & App Protection Guardian
+- **Developer**: Uzair Farooq Naikoo
+- **Status**: Live Production Application (https://ocusafe.netlify.app/)
+- **Platform**: Android (APK) & Windows (System Tray EXE)
+- **Features**: Real-time on-device computer vision measuring face-to-screen distance (<30cm warning gate), automated 20-20-20 rest cycles, daily app usage timeouts, and Android Device Administrator protection against unauthorized uninstallation.
+
+### 3. QuickConvert — 100% Private Browser File Conversion Suite
+- **Developer**: Uzair Farooq Naikoo
+- **Status**: Live Production Web Application (https://www.quickconvert.bond/)
+- **Domain**: High-Performance Client-Side Utilities & Zero-Upload Privacy
+- **Architecture**: Next.js App Router, WebAssembly (WASM), Web Audio API, HTML5 Canvas 2D/3D, client-side in-memory stream processing deployed on Vercel.
+- **Features**: 19+ in-browser utilities including HEIC to JPG/PNG, Image Resizer & Lossless Compressor, Image to PDF, PDF Merger & Splitter, PDF to Word (DOCX) & Plain Text, Audio Format Converter & Trimmer, Video Muter, Video to Frames (ZIP export), and QR Code Generator/Scanner.
+- **Privacy Guarantee**: 100% on-device processing. Files never leave the browser and are never transmitted to any external server.
+
+### 4. O.M.N.I 1.0 — Autonomous Robotic Companion
+- **Architect & Engineer**: Uzair Farooq Naikoo
 - **Status**: Under Active Development // Working Laboratory Prototype
 - **Domain**: Embodied AI & 4WD Autonomous Robotics
 - **Hardware Architecture**: Raspberry Pi 4 Quad-Core Cortex-A72 (1.8GHz, 4GB LPDDR4), dual L298N H-Bridge PWM motor driver, 4x TT DC geared motors, HC-SR04 ultrasonic obstacle avoidance radar, OV5647 5MP MIPI-CSI camera, 3.5-inch 480x320 SPI TFT visor display (ILI9486).
@@ -22,30 +56,16 @@ In national competitions, Uzair scored in the Top 20 All-India in the Young Scie
 - **AI & Multimodal Stack**: Full-duplex bidirectional voice streaming (Gemini Live WebSocket / Claude API), 24kHz 16-bit PCM low-latency audio via Linux PipeWire + ALSA, sub-0.69s roundtrip conversational latency, declarative tool calling RPC (drive, steer, capture, speech).
 - **Visor Expressions**: Bézier vector animated cybernetic eyes running at 60 FPS direct framebuffer display.
 
-### 2. QuickConvert — 100% Private Browser File Conversion Suite
-- **Status**: Live Production Web Application (https://www.quickconvert.bond/)
-- **Domain**: High-Performance Client-Side Utilities & Zero-Upload Privacy
-- **Architecture**: Next.js App Router, WebAssembly (WASM), Web Audio API, HTML5 Canvas 2D/3D, client-side in-memory stream processing deployed on Vercel.
-- **Features**: 19+ in-browser utilities including HEIC to JPG/PNG, Image Resizer & Lossless Compressor, Image to PDF, PDF Merger & Splitter, PDF to Word (DOCX) & Plain Text, Audio Format Converter & Trimmer, Video Muter, Video to Frames (ZIP export), and QR Code Generator/Scanner.
-- **Privacy Guarantee**: 100% on-device processing. Files never leave the browser and are never transmitted to any external server.
+### 5. Distributed ESP32/ESP8266 Sensor Mesh Grid
+- **Engineer**: Uzair Farooq Naikoo
+- **Thumbnail**: https://www.uzairnaikoo.cyou/gallery/iot-mesh-grid-thumb.jpg
+- **Protocol**: ESP-NOW peer-to-peer low-latency mesh (<5ms transmission), environmental telemetry (BMP280, DHT22), ultrasonic distance reader, automatic WiFi AP telemetry bridge, AES-128 payload encryption directly to central robot controller.
 
-### 3. Home Automated IoT System — Smart Energy & Thermal Regulation
+### 6. Home Automated IoT System — Smart Energy & Thermal Regulation
 - **Status**: Production Hardware Verified & Demonstrated
 - **Domain**: Microcontroller IoT, Dynamic Energy Management & Electrical Safety
 - **Partners/Initiative**: Bharti Foundation & Army Goodwill School (AGS) Wuzur
 - **Capabilities**: High-speed relay switching (<10ms actuation), continuous thermal line monitoring on high-load circuits (water geysers, AC units), and automatic fail-safe hardware cutoff in under 10ms to eliminate electrical fire risks.
-
-### 4. OcuSafe — Smart Eye & App Protection Guardian
-- **Status**: Live Production Application (https://ocusafeapp.netlify.app/)
-- **Platform**: Android (APK) & Windows (System Tray EXE)
-- **Features**: Real-time on-device computer vision measuring face-to-screen distance (<30cm warning gate), automated 20-20-20 rest cycles, daily app usage timeouts, and Android Device Administrator protection against unauthorized uninstallation.
-
-### 5. Nova Chat — Real-Time WebSocket Cyber Messenger
-- **Status**: Live Production Web App (https://novachatapp.netlify.app/)
-- **Stack**: React SPA, full-duplex WebSocket architecture, Opus voice note streaming, sub-50ms sync, cyber-glassmorphic responsive UI.
-
-### 6. Distributed ESP32/ESP8266 Sensor Mesh Grid
-- **Protocol**: ESP-NOW peer-to-peer low-latency mesh (<5ms transmission), automatic WiFi AP telemetry bridge, AES-128 payload encryption.
 
 ### 7. FruValley Kashmir — Agritech Marketplace & Storefront (Archived Venture)
 - **Status**: Archived Venture // Case Study (Web Archives: https://fruvalleyharvests.netlify.app/ & https://www.fruvalleykashmir.in/)
@@ -82,7 +102,8 @@ In national competitions, Uzair scored in the Top 20 All-India in the Young Scie
 - **Signature Seal**: https://www.uzairnaikoo.cyou/signature-cyan.png
 - **Main Portfolio**: https://www.uzairnaikoo.cyou/
 - **QuickConvert Application**: https://www.quickconvert.bond/
+- **NovaChat Application**: https://novachatapp.netlify.app/
+- **OcuSafe Application**: https://ocusafe.netlify.app/
 - **FruValley Kashmir (Netlify Archive)**: https://fruvalleyharvests.netlify.app/
 - **FruValley Kashmir (Domain Archive)**: https://www.fruvalleykashmir.in/
 - **3D Interactive Archive & Gallery**: https://www.uzairnaikoo.cyou/gallery.html
-- **Official Certificates Archive**: https://www.uzairnaikoo.cyou/certificates.html

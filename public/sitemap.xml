@@ -3,13 +3,28 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://www.uzairnaikoo.cyou/</loc>
-    <lastmod>2026-10-09</lastmod>
+    <lastmod>2026-10-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://www.uzairnaikoo.cyou/uzair-farooq-naikoo.jpg</image:loc>
       <image:title>Uzair Farooq Naikoo — Founder, AI Systems Architect &amp; Embedded Robotics Engineer</image:title>
       <image:caption>Official verified solo portrait of Uzair Farooq Naikoo</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.uzairnaikoo.cyou/gallery/novachat-mockup.png</image:loc>
+      <image:title>NovaChat AI Cyber Messenger by Developer Uzair Farooq Naikoo</image:title>
+      <image:caption>NovaChat intelligent real-time conversational system</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.uzairnaikoo.cyou/gallery/ocusafe-preview.png</image:loc>
+      <image:title>OcuSafe Smart Eye and Posture Guardian by Developer Uzair Farooq Naikoo</image:title>
+      <image:caption>On-device computer vision posture alerting and eye protection app</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.uzairnaikoo.cyou/gallery/iot-mesh-grid-thumb.jpg</image:loc>
+      <image:title>Distributed IoT Sensor Mesh Grid ESP-NOW Telemetry System</image:title>
+      <image:caption>ESP32 and ESP8266 wireless low-latency mesh telemetry board</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://www.uzairnaikoo.cyou/achievements/young_scientist_india_award.png</image:loc>
@@ -35,7 +50,7 @@
   </url>
   <url>
     <loc>https://www.uzairnaikoo.cyou/gallery.html</loc>
-    <lastmod>2026-10-09</lastmod>
+    <lastmod>2026-10-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -46,11 +61,5 @@
       <image:loc>https://www.uzairnaikoo.cyou/achievements/young_scientist_india_award.png</image:loc>
       <image:title>Young Scientist India and Young Creators League Trophy Presentation</image:title>
     </image:image>
-  </url>
-  <url>
-    <loc>https://www.uzairnaikoo.cyou/certificates.html</loc>
-    <lastmod>2026-10-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
   </url>
 </urlset>

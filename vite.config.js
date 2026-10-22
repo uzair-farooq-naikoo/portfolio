@@ -10,7 +10,6 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, 'index.html'),
         gallery: resolve(__dirname, 'gallery.html'),
-        certificates: resolve(__dirname, 'certificates.html'),
       },
     },
   },

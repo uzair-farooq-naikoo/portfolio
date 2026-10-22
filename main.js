@@ -90,7 +90,7 @@ const FLAGSHIP_PROJECT_DETAILS = {
     title: 'Distributed IoT Sensor Mesh Grid',
     tag: 'ESP32 // IOT',
     desc: 'Low-power wireless telemetry nodes transmitting environmental telemetry, distance sensing, and hardware diagnostics across an ESP-NOW / WiFi network directly to the central robot brain.',
-    img: '/frames/ezgif-frame-095.jpg',
+    img: '/gallery/iot-mesh-grid-thumb.jpg',
     specs: [
       { label: 'Protocol', val: 'ESP-NOW Peer-to-Peer Protocol' },
       { label: 'Node Hardware', val: 'ESP8266 NodeMCU & ESP32 Dual-Core' },

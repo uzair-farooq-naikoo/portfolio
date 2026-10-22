@@ -132,7 +132,7 @@ const DEFAULT_CARDS = [
     title: 'ESP32 / ESP8266 SENSOR MESH',
     tag: 'ESP32 // IOT',
     desc: 'Multi-node telemetry grid transmitting environmental diagnostics, obstacle distance, and system health via ESP-NOW.',
-    img: '/frames/ezgif-frame-095.jpg',
+    img: '/gallery/iot-mesh-grid-thumb.jpg',
     chip: 'ESP32 // ESP-NOW',
     specs: [
       { label: 'Node Protocol', val: 'ESP-NOW Low-Latency Mesh' },
@@ -253,146 +253,9 @@ const DEFAULT_CARDS = [
     ]
   },
 
-  // --- CERTIFICATES (ALL 8 OFFICIAL CREDENTIALS) ---
-  {
-    id: 'cert-ysi-2025',
-    category: 'certificates',
-    title: 'SPACE KIDZ INDIA — YSI 2025 FINALIST',
-    tag: 'HONOR // NATIONAL FINALIST',
-    desc: 'National Grand Finale Finalist at Young Scientist India 11th Edition, supported by Office of Principal Scientific Adviser to GoI & Hexaware.',
-    img: '/certificates/cert_page_1_1.jpg',
-    chip: 'SPACE KIDZ // YSI 2025',
-    specs: [
-      { label: 'Competition', val: 'Young Scientist India 11th Edition (YSI)' },
-      { label: 'Organizers', val: 'Space Kidz India & Hexaware Technologies' },
-      { label: 'Endorsement', val: 'Office of the Principal Scientific Adviser, Govt of India' },
-      { label: 'Distinction', val: 'National Grand Finale Finalist (Aug 2025)' },
-      { label: 'Credential ID', val: 'YSI-11-FIN-2025-UFN' },
-      { label: 'Lead Innovator', val: 'Uzair Farooq Naikoo' }
-    ]
-  },
-  {
-    id: 'cert-plaksha-yts',
-    category: 'certificates',
-    title: 'PLAKSHA UNIVERSITY — YOUNG TECH SCHOLAR',
-    tag: 'FELLOWSHIP // ROBOTICS',
-    desc: 'Fellowship completion certificate for Young Technology Scholars (YTS) & Young Creators League (YCL) on-site summit at Plaksha University Mohali.',
-    img: '/certificates/cert_page_8_1.jpg',
-    chip: 'PLAKSHA // MOHALI 2024',
-    specs: [
-      { label: 'Institution', val: 'Plaksha University, Mohali, Punjab' },
-      { label: 'Programme', val: 'Young Technology Scholars & Young Creators League' },
-      { label: 'Distinction', val: 'National Finalist & Prototype Exhibition' },
-      { label: 'Issue Date', val: '26th January 2024' },
-      { label: 'Credential Ref', val: 'YCL-2024-PLAKSHA-089' },
-      { label: 'Recipient', val: 'Uzair Farooq Naikoo (AGS Wuzur)' }
-    ]
-  },
-  {
-    id: 'cert-ethical-hacking',
-    category: 'certificates',
-    title: 'ETHICAL HACKING & CYBER DEFENSE',
-    tag: 'SECURITY // VERIFIED COURSE',
-    desc: 'Verified professional course certification covering penetration testing, network reconnaissance, and threat mitigation methodologies.',
-    img: '/certificates/cert_page_2_1.jpg',
-    chip: 'GREAT LEARNING // CYBER',
-    liveUrl: 'https://verify.mygreatlearning.com',
-    specs: [
-      { label: 'Academy', val: 'Great Learning Academy' },
-      { label: 'Distinction', val: 'Verified Course Certification of Completion' },
-      { label: 'Credential Ref', val: 'HOXVOPL' },
-      { label: 'Verification Portal', val: 'verify.mygreatlearning.com' },
-      { label: 'Issue Date', val: 'August 2024' },
-      { label: 'Key Domains', val: 'Network Recon, Exploit Mitigation, Linux Hardening' }
-    ]
-  },
-  {
-    id: 'cert-google-cyberpeace',
-    category: 'certificates',
-    title: 'CYBERPEACE CORPS & GOOGLE.ORG',
-    tag: 'CYBER DEFENSE // GOOGLE.ORG',
-    desc: 'Official First Responders & Mythbusters cybersecurity credential jointly certified by CyberPeace Foundation and Google.org.',
-    img: '/certificates/cert_page_5_1.jpg',
-    chip: 'CYBERPEACE // FIRST RESPONDER',
-    specs: [
-      { label: 'Initiative', val: 'CyberPeace Corps & Google.org' },
-      { label: 'Distinction', val: 'Certified Cyber First Responder & Mythbuster' },
-      { label: 'Credential ID', val: 'CP-USI-GOOG-2025-0526' },
-      { label: 'Issue Date', val: 'May 2025' },
-      { label: 'Core Skills', val: 'OSINT, Threat Intel, Digital Safety, Social Engineering Defense' },
-      { label: 'Candidate', val: 'Uzair Farooq Naikoo' }
-    ]
-  },
-  {
-    id: 'cert-ags-gold-2022',
-    category: 'certificates',
-    title: 'AGS WUZUR 1ST POSITION GOLD MEDAL',
-    tag: '1ST POSITION // GOLD MEDAL',
-    desc: '1st Position Gold Medal honor in the Science & Robotics Project Competition at Shaheed Lance Naik Nazir Ahmad Wani Memorial.',
-    img: '/certificates/cert_page_6_1.jpg',
-    chip: 'AGS WUZUR // 1ST POSITION',
-    specs: [
-      { label: 'Institution', val: 'Army Goodwill School Wuzur' },
-      { label: 'Distinction', val: '1st Position (Gold Medal Winner)' },
-      { label: 'Event', val: 'Shaheed Lance Naik Nazir Ahmad Wani (AC, SM) Memorial' },
-      { label: 'Credential ID', val: 'WCIC-2022-1ST-GOLD-01' },
-      { label: 'Issue Date', val: '2022' },
-      { label: 'Awardee', val: 'Uzair Farooq Naikoo' }
-    ]
-  },
-  {
-    id: 'cert-innofest-2025',
-    category: 'certificates',
-    title: 'BHARTI AIRTEL FOUNDATION INNOFEST',
-    tag: 'STEM FAIR // AIRTEL FOUNDATION',
-    desc: 'Certificate of Active Innovation Participation presenting embedded electronics and autonomous robotics under Bharti Airtel Foundation QSP.',
-    img: '/certificates/cert_page_3_1.jpg',
-    chip: 'INNOFEST 2025 // STEM',
-    specs: [
-      { label: 'Organization', val: 'Bharti Airtel Foundation' },
-      { label: 'Programme', val: 'Quality Support Program (QSP) INNOFEST 2025' },
-      { label: 'Venue', val: 'Army Goodwill School Wuzur' },
-      { label: 'Distinction', val: 'Active Innovation Participation' },
-      { label: 'Issue Date', val: '6th October 2025' },
-      { label: 'Credential Ref', val: 'INNOFEST-2025-BAF-AGS' }
-    ]
-  },
-  {
-    id: 'cert-finnlogic-workshop',
-    category: 'certificates',
-    title: 'FINNLOGIC IT PROGRAMMING WORKSHOP',
-    tag: 'IT WORKSHOP // SOFTWARE',
-    desc: 'Certificate of Training and Hands-on Development in Programming, Full-Stack Logic, and Embedded Coding.',
-    img: '/certificates/cert_page_4_1.jpg',
-    chip: 'FINNLOGIC TECHWORLD',
-    specs: [
-      { label: 'Company', val: 'Finnlogic Techworld Pvt Ltd' },
-      { label: 'Distinction', val: 'Certificate of Training in Programming & Coding' },
-      { label: 'Issue Date', val: 'July 2023' },
-      { label: 'Credential Ref', val: 'FINNLOGIC-IT-174928' },
-      { label: 'Focus Area', val: 'Software Architecture & Embedded Logic' },
-      { label: 'Trainee', val: 'Uzair Farooq Naikoo' }
-    ]
-  },
-  {
-    id: 'cert-manf-excellence',
-    category: 'certificates',
-    title: 'WOMANISTAAN MOKSH ACADEMIC EXCELLENCE',
-    tag: 'ACADEMICS // EXCELLENCE',
-    desc: 'Certificate of Academic Excellence in Secondary Studies and Leadership Achievement from Womanistaan & MANF.',
-    img: '/certificates/cert_page_7_1.jpg',
-    chip: 'MOKSH // ACADEMIC MERIT',
-    specs: [
-      { label: 'Organization', val: 'Womanistaan & MANF Moksh Foundation' },
-      { label: 'Distinction', val: 'Certificate of Academic Excellence in Studies' },
-      { label: 'Issue Date', val: '2023' },
-      { label: 'Credential ID', val: 'MANF-WOMANISTAAN-2023-EXC' },
-      { label: 'Honoree', val: 'Uzair Farooq Naikoo' }
-    ]
-  },
   {
     id: 'young-scientist-india-award',
-    category: 'certificates',
+    category: 'gallery',
     title: 'YOUNG SCIENTIST INDIA & YCL AWARD',
     tag: 'NATIONAL AWARD // TOP 20',
     desc: 'National Finalist and Innovation Awardee in Young Scientist India (H2S Edition) & Young Creators League, organized by Space Kidz India, Hexaware Technologies, and the Office of the Principal Scientific Adviser to the Government of India.',
@@ -731,7 +594,7 @@ function renderCylinderCards() {
     cardEl.setAttribute('tabindex', '0');
     cardEl.setAttribute('aria-label', `${card.title} - ${card.tag}`);
 
-    const isCert = card.category === 'certificates' || (card.img && card.img.includes('/certificates/'));
+    const isCert = false;
 
     cardEl.innerHTML = `
       <!-- Dynamic Holographic Rainbow Diffraction & Sheen Layers -->
@@ -1022,7 +885,7 @@ function openCardInspection(card) {
     });
   }
 
-  const isCert = card.category === 'certificates' || (card.img && card.img.includes('/certificates/'));
+  const isCert = false;
 
   // Live Application Uplink & Master Scan Inspection Buttons
   if (inspectActionsRow) {
